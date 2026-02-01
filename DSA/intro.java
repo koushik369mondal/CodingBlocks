@@ -1,4 +1,6 @@
-// import java.util.*;
+import java.util.*;
+
+import java.util.Scanner;
 
 public class intro {
 
@@ -16,7 +18,36 @@ public class intro {
         }
     }
 
+    static void Problem2() {
+        Scanner sc = new Scanner(System.in);
+
+        int m1, m2, m3, m4, m5;
+        double avg;
+
+        System.out.println("Enter marks of 5 subjects:");
+        m1 = sc.nextInt();
+        m2 = sc.nextInt();
+        m3 = sc.nextInt();
+        m4 = sc.nextInt();
+        m5 = sc.nextInt();
+
+        if (m1 < 35 || m2 < 35 || m3 < 35 || m4 < 35 || m5 < 35) {
+            System.out.println("Result: Fail");
+        } else {
+            avg = (m1 + m2 + m3 + m4 + m5) / 5.0;
+
+            if (avg >= 75) {
+                System.out.println("Result: Distinction");
+            } else if (avg >= 60) {
+                System.out.println("Result: First Class");
+            } else {
+                System.out.println("Result: Pass");
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        Problem1();
+        // Problem1();
+        Problem2();
     }
 }
