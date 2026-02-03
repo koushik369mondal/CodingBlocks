@@ -1,4 +1,4 @@
-package Lectures;
+package CW;
 import java.util.*;
 
 import java.util.Scanner;

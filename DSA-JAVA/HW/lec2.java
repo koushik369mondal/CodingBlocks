@@ -12,6 +12,9 @@ public class lec2 {
         System.out.println("Sum of odd numbers: " + sum);
     }
 
+    public static void coneVolume(){
+    }
+
     public static void main(String[] args) {
         sumOdd();
     }

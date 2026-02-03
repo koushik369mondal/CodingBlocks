@@ -1,4 +1,4 @@
-package Lectures;
+package CW;
 import java.util.Scanner;
 
 public class lec2 {
