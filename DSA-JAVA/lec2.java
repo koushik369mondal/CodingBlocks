@@ -122,16 +122,14 @@ public class lec2 {
 
     // Question 11
     public static void reverse(){
-        System.out.print("Enter a number: ");
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int rev = 0;
-        while(n > 0){
-            int r = n % 10;
-            rev = rev * 10 + r;
-            n = n / 10;
+        int n = 123; 
+        int ans = 0;
+        while (n > 0) {
+            int r = n % 10; 
+            n = n / 10; 
+            ans = ans * 10 + r;
         }
-        System.out.println("Reversed Number: " + rev);
+        System.out.println(ans);
     }
 
     public static void main(String[] args) {
