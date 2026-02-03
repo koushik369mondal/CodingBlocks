@@ -75,7 +75,7 @@ public class lec2 {
 
     // Question 8
     public static void allEven(){
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i=1; i<=n; i++){
@@ -92,7 +92,21 @@ public class lec2 {
         int n = sc.nextInt();
         int sum = 0;
         for(int i=1; i<=n; i++){
-            sum += i;
+            sum = sum + i;
+        }
+        System.out.println("Sum: " + sum);
+    }
+
+    //Question 10
+    public static void sumOdd(){
+        System.out.println("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for(int i=1; i<=n; i++){
+            if(i % 2 != 0){
+                sum = sum + i;
+            }
         }
         System.out.println("Sum: " + sum);
     }
@@ -106,6 +120,7 @@ public class lec2 {
         // count();
         // mulTable();
         // allEven();
-        sumNatural();
+        // sumNatural();
+        sumOdd();
     }
 }
