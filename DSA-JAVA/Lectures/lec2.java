@@ -2,7 +2,7 @@ package Lectures;
 import java.util.Scanner;
 
 public class lec2 {
-    // Question 1
+    // Question 1 - Addition of two numbers
     public static void add(){
         int x = 5;
         int y = 6;
@@ -10,7 +10,7 @@ public class lec2 {
         System.out.println(z);
     }
 
-    // Question 2
+    // Question 2 - Simple Interest
     public static void simpleInterest(){
         int p = 1000;
         int r = 5;
@@ -19,7 +19,7 @@ public class lec2 {
         System.out.println(si);
     }
 
-    // Question 3
+    // Question 3 - Odd or Even 
     public static void oddEven(){
         System.out.print("Enter a number: ");
         Scanner sc = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class lec2 {
         }
     }
 
-    // Question 4
+    // Question 4 - Maximum of two numbers
     public static void max(){
         int a = 10;
         int b = 20;
@@ -42,7 +42,7 @@ public class lec2 {
         }
     }
 
-    // Question 5
+    // Question 5 - Grade based on marks
     public static void grade(){
         int marks = 85;
         if(marks >= 90){
@@ -56,7 +56,7 @@ public class lec2 {
         }
     }
 
-    // Question 6
+    // Question 6 - Count from 1 to n
     public static void count(){
         int n = 5;
         for(int i=1; i<=n; i++){
@@ -64,7 +64,7 @@ public class lec2 {
         }
     }
 
-    // Question 7
+    // Question 7 - Multiplication Table
     public static void mulTable(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
@@ -74,7 +74,7 @@ public class lec2 {
         }
     }
 
-    // Question 8
+    // Question 8 - Print all even numbers from 1 to n
     public static void allEven(){
         System.out.print("Enter a number: ");
         Scanner sc = new Scanner(System.in);
@@ -86,7 +86,7 @@ public class lec2 {
         }
     }
 
-    // Question 9
+    // Question 9 - Sum of first n natural numbers
     public static void sumNatural(){
         System.out.println("Enter a number: ");
         Scanner sc = new Scanner(System.in);
@@ -107,7 +107,7 @@ public class lec2 {
         System.out.println("Sum: " + sum);
     }
 
-    //Question 10
+    //Question 10 - Sum of first n odd numbers
     public static void sumOdd(){
         System.out.println("Enter a number: ");
         Scanner sc = new Scanner(System.in);
@@ -121,7 +121,7 @@ public class lec2 {
         System.out.println("Sum: " + sum);
     }
 
-    // Question 11
+    // Question 11 - Reverse a number
     public static void reverse(){
         int n = 123; 
         int ans = 0;
