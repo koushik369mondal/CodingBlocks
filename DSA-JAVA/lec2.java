@@ -97,6 +97,15 @@ public class lec2 {
         System.out.println("Sum: " + sum);
     }
 
+    // Question 9 - Alternative - without loop
+    public static void sumNaturalWithoutLoop(){
+        System.out.println("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = n * (n + 1) / 2;
+        System.out.println("Sum: " + sum);
+    }
+
     //Question 10
     public static void sumOdd(){
         System.out.println("Enter a number: ");
@@ -121,6 +130,7 @@ public class lec2 {
         // mulTable();
         // allEven();
         // sumNatural();
-        sumOdd();
+        // sumOdd();
+        sumNaturalWithoutLoop();
     }
 }
