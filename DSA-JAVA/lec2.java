@@ -22,9 +22,20 @@ public class lec2 {
             System.out.println("Odd");
         }
     }
+
+    public static void max(){
+        int a = 10;
+        int b = 20;
+        if(a > b){
+            System.out.println(a);
+        } else {
+            System.out.println(b);
+        }
+    }
     public static void main(String[] args) {
         // add();
         // simpleInterest();
-        oddEven();
+        // oddEven();
+        max();
     }
 }
