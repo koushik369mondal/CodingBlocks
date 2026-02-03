@@ -20,8 +20,17 @@ public class lec2 {
         System.out.println("Volume of the cone: " + v);
     }
 
+    public static void cylinderVolume(){
+        double pi = 3.14;
+        double r = 5;
+        double h = 6;
+        double v = pi * r * r * h;
+        System.out.println("Volume of the cylinder: " + v);
+    }
+
     public static void main(String[] args) {
         // sumOdd();
-        coneVolume();
+        // coneVolume();
+        cylinderVolume();
     }
 }
