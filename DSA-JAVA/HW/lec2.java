@@ -41,7 +41,7 @@ public class lec2 {
         while(n > 0){
             int digit = n % 10;
             sum = sum + digit;
-            n = n / 10;
+            n = n / 10; // Remove the last digit
         }
         System.out.println("Sum of all digits: " + sum);
     }
