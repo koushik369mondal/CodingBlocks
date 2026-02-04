@@ -41,8 +41,48 @@ public class lec3 {
             System.out.println("Better Luck Next Time");
         }
     }
+
+    public static void lotteryGameAdvanace() {
+        System.out.print("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // int n = 400;
+        if (n >= 300 && n <= 460) {
+            System.out.println("Price : Mackbook");
+            if(n >=300 &&  n <=380){
+                System.out.println("M1 Model");
+            }else if(n >= 381 && n < 460){
+                System.out.println("M2 Model");
+            }
+        } else if (n >= 200 && n <= 280) {
+            System.out.println("Price kurkure");
+            if (n >= 200 && n <= 240) {
+                System.out.println("Chili Kurkure");
+            } else if (n >= 241 && n < 280) {
+                System.out.println("Onion Kurkure");
+            }
+        } else if (n >= 1100 && n <= 1500) {
+            System.out.println("Price : Cycle");
+            if (n >= 1100 && n <= 1300) {
+                System.out.println("Avon Cycle");
+            } else if (n >= 1301 && n < 1500) {
+                System.out.println("Hero Cycle");
+            }
+        } else if (n > 50 && n <= 80) {
+            System.out.println("Price: Bike");
+            if (n > 50 && n <= 65) {
+                System.out.println("Bullet");
+            } else if (n >= 65 && n < 80) {
+                System.out.println("Rajdoot");
+            }
+        } else {
+            System.out.println("Better Luck Next Time");
+        }
+    }
     public static void main(String[] args) {
         // isLinear();
-        lotteryGame();
+        // lotteryGame();
+        lotteryGameAdvanace();
+
     }
 }
