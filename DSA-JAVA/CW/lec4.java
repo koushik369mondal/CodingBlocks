@@ -50,11 +50,22 @@ public class lec4 {
     public static void pattern3() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
+        // for (int i = n; i >= 1; i--) {
+        //     for (int j = 1; j <= i; j++) {
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+        int row = n;
+        while (row >= 1) {
+            int i = 1;
+            while (i <= row) {
                 System.out.print("* ");
+                i++;
             }
             System.out.println();
+            row--;
         }
     }
 
