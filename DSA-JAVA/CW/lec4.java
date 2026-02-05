@@ -135,21 +135,21 @@ public class lec4 {
         }
     }
 
-    // Not done yet
-    public static void pattern6() {
-        for (int i = 5; i >= 1; i--) {
-            for (int k = 5; k > i; k--) {
-                System.out.print(" ");
-            }
-            for (int l = 5; l > i; l--) {
-                System.out.print(" ");
-            }
-            for (int j = i; j >= 1; j--) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
 
+    public static void pattern6() {
+        // for (int i = 5; i >= 1; i--) {
+        //     for (int k = 5; k > i; k--) {
+        //         System.out.print(" ");
+        //     }
+        //     for (int l = 5; l > i; l--) {
+        //         System.out.print(" ");
+        //     }
+        //     for (int j = i; j >= 1; j--) {
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }     
+        
     }
 
     public static void pattern7() {
@@ -173,7 +173,7 @@ public class lec4 {
         // pattern3();
         // pattern4();
         // pattern5();
-        pattern6();
-        // pattern7();
+        // pattern6();
+        pattern7();
     }
 }
