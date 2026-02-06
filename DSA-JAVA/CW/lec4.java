@@ -1,5 +1,3 @@
-package CW;
-
 import java.util.Scanner;
 
 public class lec4 {
@@ -171,9 +169,9 @@ public class lec4 {
         // pattern1();
         // pattern2();
         // pattern3();
-        // pattern4();
+        pattern4();
         // pattern5();
         // pattern6();
-        pattern7();
+        // pattern7();
     }
 }
