@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class lec4 {
+
+    // *  *  *  *  *  
+    // *  *  *  *  *  
+    // *  *  *  *  *  
+    // *  *  *  *  *  
+    // *  *  *  *  *  
     public static void pattern1() {
         // for (int i = 1; i <= 5; i++) {
         // // Star
@@ -24,6 +30,11 @@ public class lec4 {
         }
     }
 
+    // * 
+    // * * 
+    // * * * 
+    // * * * * 
+    // * * * * *
     public static void pattern2() {
         int n = 5;
         // for(int i=1; i<=n; i++){
@@ -45,6 +56,11 @@ public class lec4 {
         }
     }
 
+    // * * * * * 
+    // * * * *
+    // * * *
+    // * *
+    // *
     public static void pattern3() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -67,6 +83,11 @@ public class lec4 {
         }
     }
 
+    //         * 
+    //       * *
+    //     * * *
+    //   * * * *
+    // * * * * *
     public static void pattern4() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -93,6 +114,11 @@ public class lec4 {
         }
     }
 
+    // * * * * * 
+    //   * * * *
+    //     * * *
+    //       * *
+    //         *
     public static void pattern5() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -134,22 +160,31 @@ public class lec4 {
     }
 
 
+    // * * * * * 
+    //     * * * *
+    //         * * *
+    //             * *
+    //                 *
     public static void pattern6() {
-        // for (int i = 5; i >= 1; i--) {
-        //     for (int k = 5; k > i; k--) {
-        //         System.out.print(" ");
-        //     }
-        //     for (int l = 5; l > i; l--) {
-        //         System.out.print(" ");
-        //     }
-        //     for (int j = i; j >= 1; j--) {
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }     
+        for (int i = 5; i >= 1; i--) {
+            for (int k = 5; k > i; k--) {
+                System.out.print("  ");
+            }
+            for (int l = 5; l > i; l--) {
+                System.out.print("  ");
+            }
+            for (int j = i; j >= 1; j--) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }     
         
     }
 
+    // * * * * * 
+    // *       *
+    // *       *
+    // * * * * *
     public static void pattern7() {
         int rows = 4;
         int cols = 5;
@@ -169,9 +204,9 @@ public class lec4 {
         // pattern1();
         // pattern2();
         // pattern3();
-        pattern4();
+        // pattern4();
         // pattern5();
         // pattern6();
-        // pattern7();
+        pattern7();
     }
 }
