@@ -114,10 +114,78 @@ public class lec5 {
         }
     }
 
+    public static void pattern5(){
+        //*                 * 
+        //* *             * *
+        //* * *         * * *
+        //* * * *     * * * *
+        //* * * * * * * * * * 
+        int n = 5;
+        int row = 1;
+        int star = 1;
+        int space = 2 * n - 3;
+        while (row <= n) {
+            // star
+            int j = 1;
+            while (j <= star) {
+                System.out.print(" * ");
+                j++;
+            }
+            // space
+            int i = 1;
+            while (i <= space) {
+                System.out.print("   ");
+                i++;
+            }
+            // star
+            j = 1;
+            while (j <= star) {
+                System.out.print(" * ");
+                j++;
+            }
+            //next line update
+            System.out.println();
+            space = space - 2;
+            row++;
+            star++;
+        }
+    }
+
+    public static void pattern6(){
+        int n = 5;
+        int row = 1;
+
+        while (row <= n) {
+
+            int left = 1;
+            while (left <= row) {
+                System.out.print("* ");
+                left++;
+            }
+
+            int space = 1;
+            while (space <= (n - row) * 4) {
+                System.out.print(" ");
+                space++;
+            }
+
+            int right = 1;
+            while (right <= row) {
+                System.out.print("* ");
+                right++;
+            }
+
+            System.out.println();
+            row++;
+        }
+    }
+
     public static void main(String[] args) {
         // pattern1();
         // pattern2();
         // pattern3();
-        pattern4();
+        // pattern4();
+        // pattern5();
+        pattern6();
     }
 }
