@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class lec5 {
+
+    //         * 
+    //       * * *
+    //     * * * * *
+    //   * * * * * * *
+    // * * * * * * * * *
     public static void pattern1() {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -27,6 +33,11 @@ public class lec5 {
         }
     }
 
+    // * * * * * * * * * 
+    //   * * * * * * *
+    //     * * * * *
+    //       * * *
+    //         *
     public static void pattern2() {
         // Scanner sc = new Scanner(System.in);
         // int n = sc.nextInt();
@@ -54,6 +65,11 @@ public class lec5 {
         }
     }
 
+    //         * 
+    //       *   *
+    //     *   *   *
+    //   *   *   *   *
+    // *   *   *   *   *
     public static void pattern3(){
         int n = 5;
         int space = n - 1;
@@ -84,6 +100,11 @@ public class lec5 {
         }
     }
 
+    //         * 
+    //       * ! *
+    //     * ! * ! *
+    //   * ! * ! * ! *
+    // * ! * ! * ! * ! *
     public static void pattern4(){
         int n = 5;
         int space = n - 1;
@@ -114,12 +135,12 @@ public class lec5 {
         }
     }
 
+    //  *                       * 
+    //  *  *                 *  *
+    //  *  *  *           *  *  *
+    //  *  *  *  *     *  *  *  *
+    //  *  *  *  *  *  *  *  *  *  *
     public static void pattern5(){
-        //*                 * 
-        //* *             * *
-        //* * *         * * *
-        //* * * *     * * * *
-        //* * * * * * * * * * 
         int n = 5;
         int row = 1;
         int star = 1;
@@ -151,30 +172,30 @@ public class lec5 {
         }
     }
 
+    // *                 * 
+    // * *             * *
+    // * * *         * * *
+    // * * * *     * * * *
+    // * * * * * * * * * *
     public static void pattern6(){
         int n = 5;
         int row = 1;
-
         while (row <= n) {
-
             int left = 1;
             while (left <= row) {
                 System.out.print("* ");
                 left++;
             }
-
             int space = 1;
             while (space <= (n - row) * 4) {
                 System.out.print(" ");
                 space++;
             }
-
             int right = 1;
             while (right <= row) {
                 System.out.print("* ");
                 right++;
             }
-
             System.out.println();
             row++;
         }
