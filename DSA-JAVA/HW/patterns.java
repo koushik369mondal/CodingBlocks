@@ -70,8 +70,8 @@ public class patterns {
         int n = 5;
 
         System.out.println("Using For Loop : ");
-        for(int i=n; i>=1; i--){ // it controls the number of rows - 5,4,3,2,1
-            for(int j=1; j<=i; j++){ // it controls the number of stars in each row - 5,4,3,2,1
+        for(int i=n; i>=1; i--){ 
+            for(int j=1; j<=i; j++){ 
                 System.out.print(" * ");
             }
             System.out.println();
@@ -90,9 +90,32 @@ public class patterns {
         }
     }
 
+    //         *
+    //       * *
+    //     * * *
+    //   * * * *
+    // * * * * *
+    public static void pattern4(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        for(int row=1; row<=n; row++){
+            //space
+            for(int space=1; space<= n - row; space++){
+                System.out.print("   ");
+            }
+            //stars
+            for(int star=1; star<=row; star++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // pattern1();
         // pattern2();
-        pattern3();
+        // pattern3();
+        pattern4();
     }
 }
