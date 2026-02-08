@@ -131,10 +131,33 @@ public class patterns {
         }
     }
 
+    // * * * * *
+    //   * * * *
+    //     * * *
+    //       * *
+    //         *
+    public static void pattern5(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        for(int i=1; i<=n; i++){
+            //space
+            for(int space=1; space<i; space++){
+                System.out.print("   ");
+            }
+            //star
+            for(int star=1; star<=n-i+1; star++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // pattern1();
         // pattern2();
         // pattern3();
-        pattern4();
+        // pattern4();
+        pattern5();
     }
 }
