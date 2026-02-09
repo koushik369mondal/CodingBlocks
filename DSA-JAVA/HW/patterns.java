@@ -177,12 +177,7 @@ public class patterns {
     //         * * *
     //             * *
     //                 *
-    public static void pattern6(){
-        int n = 5;
-
-        System.out.println("Using For Loop : ");
-        
-    }
+    public static void pattern6(){}
 
     // * * * * *
     // *       *
@@ -281,7 +276,32 @@ public class patterns {
     //     3 3 3 3 3
     //   4 4 4 4 4 4 4
     // 5 5 5 5 5 5 5 5 5
-    public static void pattern18(){}
+    public static void pattern18(){
+        int n = 5;
+
+        System.out.println("Using While Loop : ");
+        int space = n - 1;
+        int star = 1;
+        int row = 1;
+        while (row <= n) {
+            // space
+            int i = 1;
+            while (i <= space) {
+                System.out.print("  ");
+                i++;
+            }
+            // star
+            int j = 1;
+            while (j <= star) {
+                System.out.print(row + " "); // * -> row
+                j++;
+            }
+            System.out.println();
+            row++;
+            space--;
+            star += 2;
+        }
+    }
 
     //                 1
     //             2   3   4
@@ -307,7 +327,7 @@ public class patterns {
         // pattern2();
         // pattern3();
         // pattern4();
-        pattern5();
+        // pattern5();
         // pattern6();
         // pattern7();
         // pattern8();
@@ -320,7 +340,7 @@ public class patterns {
         // pattern15();
         // pattern16();
         // pattern17();
-        // pattern18();
+        pattern18();
         // pattern19();
         // pattern20();
     }
