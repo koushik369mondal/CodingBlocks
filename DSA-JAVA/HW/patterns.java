@@ -2,6 +2,7 @@ package HW;
 
 public class patterns {
     
+
     // * * * * *
     // * * * * *
     // * * * * *
@@ -32,6 +33,7 @@ public class patterns {
         }
     }
 
+
     // *
     // * *
     // * * *
@@ -61,6 +63,7 @@ public class patterns {
         }
     }
 
+
     // * * * * *
     // * * * *
     // * * *
@@ -89,6 +92,7 @@ public class patterns {
             row--;
         }
     }
+
 
     //         *
     //       * *
@@ -131,6 +135,7 @@ public class patterns {
         }
     }
 
+
     // * * * * *
     //   * * * *
     //     * * *
@@ -172,6 +177,7 @@ public class patterns {
         }
     }
 
+
     // * * * * *
     //     * * * *
     //         * * *
@@ -179,11 +185,13 @@ public class patterns {
     //                 *
     public static void pattern6(){}
 
+
     // * * * * *
     // *       *
     // *       *
     // * * * * *
     public static void pattern7(){}
+
 
     //         *
     //       * * *
@@ -217,12 +225,39 @@ public class patterns {
         }
     }
 
+
     // * * * * * * * * *
     //   * * * * * * *
     //     * * * * *
     //       * * *
     //         *
-    public static void pattern9(){}
+    public static void pattern9(){
+        int n = 5;
+
+        System.out.println("Using While Loop : ");
+        int space = 0;
+        int star = 2 * n - 1;
+        int row = 1;
+        while (row <= n) {
+            // space
+            int i = 1;
+            while (i <= space) {
+                System.out.print("   ");
+                i++;
+            }
+            // star
+            int j = 1;
+            while (j <= star) {
+                System.out.print(" * ");
+                j++;
+            }
+            System.out.println();
+            row++;
+            space++;
+            star -= 2;
+        }
+    }
+
 
     //         *
     //       *   *
@@ -231,12 +266,14 @@ public class patterns {
     // *   *   *   *   *
     public static void pattern10(){}
 
+
     //         *
     //       * ! *
     //     * ! * ! *
     //   * ! * ! * ! *
     // * ! * ! * ! * ! *
     public static void pattern11(){}
+
 
     // *                 *
     // * *             * *
@@ -245,12 +282,14 @@ public class patterns {
     // * * * * * * * * * *
     public static void pattern12(){}
 
+
     // *               *
     // * *           * *
     // * * *       * * *
     // * * * *   * * * *
     // * * * * * * * * *
     public static void pattern13(){}
+
 
     // *
     // * *
@@ -263,6 +302,7 @@ public class patterns {
     // *
     public static void pattern14(){}
 
+
     //         *
     //       * *
     //     * * *
@@ -273,6 +313,7 @@ public class patterns {
     //       * *
     //         *
     public static void pattern15(){}
+
 
     //         * * * * *
     //       * * * *
@@ -285,6 +326,7 @@ public class patterns {
     //         * * * * *
     public static void pattern16(){}
 
+
     // * * * *  * * * *
     // * * *      * * *
     // * *          * *
@@ -295,6 +337,7 @@ public class patterns {
     // * * *      * * *
     // * * * *  * * * *
     public static void pattern17(){}
+
 
     //         1
     //       2 2 2
@@ -327,6 +370,7 @@ public class patterns {
             star += 2;
         }
     }
+
 
     //                 1
     //             2   3   4
@@ -362,6 +406,7 @@ public class patterns {
         }
     }
 
+
     // *       * * * * *
     // *       *
     // *       *
@@ -382,8 +427,8 @@ public class patterns {
         // pattern5();
         // pattern6();
         // pattern7();
-        pattern8();
-        // pattern9();
+        // pattern8();
+        pattern9();
         // pattern10();
         // pattern11();
         // pattern12();
