@@ -327,16 +327,35 @@ public class patterns {
     public static void pattern16(){}
 
 
-    // * * * *  * * * *
-    // * * *      * * *
-    // * *          * *
-    // *              *
-    //
-    // *              *
-    // * *          * *
-    // * * *      * * *
-    // * * * *  * * * *
+    // * * * * *
+    //     * * * *
+    //         * * *
+    //             * *
+    //                 *
+    //             * *
+    //         * * *
+    //     * * * *
+    // * * * * *
     public static void pattern17(){}
+
+
+    // * * * *   * * * *
+    // * * *       * * *
+    // * *           * *
+    // *               *
+    public static void pattern18(){}
+
+
+    // * * * *   * * * *
+    // * * *       * * *
+    // * *           * *
+    // *               *
+    //
+    // *               *
+    // * *           * *
+    // * * *       * * *
+    // * * * *   * * * *
+    public static void pattern19(){}
 
 
     //         1
@@ -344,7 +363,7 @@ public class patterns {
     //     3 3 3 3 3
     //   4 4 4 4 4 4 4
     // 5 5 5 5 5 5 5 5 5
-    public static void pattern18(){
+    public static void pattern20(){
         int n = 5;
 
         System.out.println("Using While Loop : ");
@@ -377,7 +396,7 @@ public class patterns {
     //         5   6   7   8   9
     //     10  11  12  13  14  15  16
     // 17  18  19  20  21  22  23  24  25
-    public static void pattern19(){
+    public static void pattern21(){
         int n = 5;
         int num = 1;
 
@@ -407,6 +426,21 @@ public class patterns {
     }
 
 
+    // 1
+    // 1 2
+    // 1 2 3
+    // 1 2 3 4
+    // 1 2 3 4 5
+    public static void pattern22(){}
+
+
+    // 5 4 3 2 *
+    // 5 4 3 * 1
+    // 5 4 * 2 1
+    // 5 * 3 2 1
+    // * 4 3 2 1
+    public static void pattern23(){}
+
     // *       * * * * *
     // *       *
     // *       *
@@ -416,7 +450,7 @@ public class patterns {
     //         *       *
     //         *       *
     // * * * * *       *
-    public static void pattern20(){}
+    public static void pattern24(){}
 
 
     public static void main(String[] args) {
@@ -428,7 +462,7 @@ public class patterns {
         // pattern6();
         // pattern7();
         // pattern8();
-        pattern9();
+        // pattern9();
         // pattern10();
         // pattern11();
         // pattern12();
@@ -438,7 +472,11 @@ public class patterns {
         // pattern16();
         // pattern17();
         // pattern18();
-        // pattern19();
+        pattern19();
         // pattern20();
+        // pattern21();
+        // pattern22();
+        // pattern23();
+        // pattern24();
     }
 }
