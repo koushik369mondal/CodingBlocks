@@ -43,7 +43,7 @@ public class lec8 {
         Scanner sc = new Scanner (System.in);
         int n = sc.nextInt();
         int a = 0, b = 1;
-        for(int i=3; i<n; i++){
+        for(int i=3; i<=n; i++){
             System.out.print(a + " ");
             int c = a + b;
             a = b;
@@ -51,9 +51,27 @@ public class lec8 {
         }
     }
 
+
+    public static void hcf(){
+        int a = 60;
+        int b = 36;
+
+        while(a%b != 0){
+            int rem = a%b;
+            a = b;
+            b = rem;
+        }
+        System.out.println("HCF is: " + b);
+    }
+
+
+    public static void gcd(){}
+
+
     public static void main(String[] args) {
         // isPrime();
         // printPrimeNumbers();
-        fibonacci();
+        // fibonacci();
+        hcf();
     }
 }
