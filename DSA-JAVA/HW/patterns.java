@@ -202,6 +202,8 @@ public class patterns {
             }
             System.out.println();
         }
+
+        System.out.println("Using While Loop : ");
     }
 
 
@@ -209,7 +211,19 @@ public class patterns {
     // *       *
     // *       *
     // * * * * *
-    public static void pattern7(){}
+    public static void pattern7(){
+        int n = 5;
+        for(int i=1; i<n; i++){
+            for(int j=1; j<=n; j++){
+                if(i==1 || i==(n-1) || j==1 || j==n){
+                    System.out.print(" * ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
 
 //  *               *
@@ -710,8 +724,8 @@ public static void pattern35(){}
         // pattern3();
         // pattern4();
         // pattern5();
-        pattern6();
-        // pattern7();
+        // pattern6();
+        pattern7();
         // pattern8();
         // pattern9();
         // pattern10();
