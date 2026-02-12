@@ -12,11 +12,10 @@ public class lec9 {
 
     public static int evenOdd2(int n){
         if (n % 2 == 0) {
-            System.out.println("Even");
+            return 1; 
         } else {
-            System.out.println("Odd");
+            return 0;
         }
-        return n;
     }
 
     public static void max1(int a, int b){
@@ -36,17 +35,32 @@ public class lec9 {
         return 0;
     }
 
+    public static void maxThree(int a, int b, int c) {
+        if (a > b && a > c) {
+            System.out.println(a);
+        } else if (b > c) {
+            System.out.println(b);
+        } else {
+            System.out.println(c);
+        }
+    }
+
     public static void main(String[] args) {      
         int n = 10;
 
-        // Using void function
-        evenOdd1(n);
-
-        //Using return type function
-        evenOdd2(n);
+        evenOdd1(n); 
+        int result = evenOdd2(n);
+        if (result == 1) {
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
 
         int a = 5, b = 10;
         max1(a, b);
         max2(a, b);
+
+        int c = 15;
+        maxThree(a, b, c);
     }
 }
