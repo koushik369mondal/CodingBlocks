@@ -100,6 +100,14 @@ public class lec9 {
         return reverse;
     }
 
+    public static void allEven(int n2){
+        for(int i=1; i<=n2; i++){
+            if(i % 2 == 0){
+                System.out.print(i + " ");
+            }
+        }
+    }
+
     public static void main(String[] args) {      
         int n = 10;
 
@@ -137,5 +145,8 @@ public class lec9 {
 
         int reversed = reverseNumber2(number);
         System.out.println(reversed);
+
+        int n2 = 1000;
+        allEven(n2);
     }
 }
