@@ -80,6 +80,17 @@ public class lec9 {
         return (p * r * t) / 100;
     }
 
+    public static void reverseNumber1(int n){
+        int reverse = 0;
+        while(n > 0){
+            int r = n % 10;
+            reverse = reverse * 10 + r;
+            n = n / 10;
+        }
+        System.out.println(reverse);
+    }
+
+
     public static void main(String[] args) {      
         int n = 10;
 
@@ -108,8 +119,11 @@ public class lec9 {
 
         int p = 1000, r = 5, t = 2;
         simpleInterest1(p, r, t);
-        
+
         int si = simpleInterest2(p, r, t);
         System.out.println(si);
+
+        int number = 12345;
+        reverseNumber1(number);
     }
 }
