@@ -193,12 +193,20 @@ public class patterns {
     public static void pattern7(){}
 
 
+//  *               *
+//      *       *
+//          *
+//      *       *
+//  *               *
+public static void pattern8() {}
+
+
     //         *
     //       * * *
     //     * * * * *
     //   * * * * * * *
     // * * * * * * * * *
-    public static void pattern8(){
+    public static void pattern9(){
         int n = 5;
 
         System.out.println("Using While Loop : ");
@@ -231,7 +239,7 @@ public class patterns {
     //     * * * * *
     //       * * *
     //         *
-    public static void pattern9(){
+    public static void pattern10(){
         int n = 5;
 
         System.out.println("Using While Loop : ");
@@ -264,7 +272,7 @@ public class patterns {
     //     *   *   *
     //   *   *   *   *
     // *   *   *   *   *
-    public static void pattern10(){}
+    public static void pattern11(){}
 
 
     //         *
@@ -272,7 +280,7 @@ public class patterns {
     //     * ! * ! *
     //   * ! * ! * ! *
     // * ! * ! * ! * ! *
-    public static void pattern11(){}
+    public static void pattern12(){}
 
 
     // *                 *
@@ -280,7 +288,7 @@ public class patterns {
     // * * *         * * *
     // * * * *     * * * *
     // * * * * * * * * * *
-    public static void pattern12(){}
+    public static void pattern13(){}
 
 
     // *               *
@@ -288,21 +296,29 @@ public class patterns {
     // * * *       * * *
     // * * * *   * * * *
     // * * * * * * * * *
-    public static void pattern13(){}
-
-
-    // *
-    // * *
-    // * * *
-    // * * * *
-    // * * * * *
-    // * * * *
-    // * * *
-    // * *
-    // *
     public static void pattern14(){}
 
 
+    // * * * * * * * * *
+    // * * * *   * * * *
+    // * * *       * * *
+    // * *           * *
+    // *               *
+    public static void pattern15(){}
+
+
+    // *
+    // * *
+    // * * *
+    // * * * *
+    // * * * * *
+    // * * * *
+    // * * *
+    // * *
+    // *
+    public static void pattern16(){}
+
+
     //         *
     //       * *
     //     * * *
@@ -312,7 +328,7 @@ public class patterns {
     //     * * *
     //       * *
     //         *
-    public static void pattern15(){}
+    public static void pattern17(){}
 
 
     //         * * * * *
@@ -324,7 +340,7 @@ public class patterns {
     //     * * *
     //       * * *
     //         * * * * *
-    public static void pattern16(){}
+    public static void pattern18(){}
 
 
     // * * * * *
@@ -336,14 +352,14 @@ public class patterns {
     //         * * *
     //     * * * *
     // * * * * *
-    public static void pattern17(){}
+    public static void pattern19(){}
 
 
     // * * * *   * * * *
     // * * *       * * *
     // * *           * *
     // *               *
-    public static void pattern18(){}
+    public static void pattern20(){}
 
 
     // * * * *   * * * *
@@ -355,7 +371,37 @@ public class patterns {
     // * *           * *
     // * * *       * * *
     // * * * *   * * * *
-    public static void pattern19(){}
+    public static void pattern21(){}
+
+
+    // * * * * * * *
+    // * * *   * * *
+    // * *       * *
+    // *           *
+    // * *       * *
+    // * * *   * * *
+    // * * * * * * *
+    public static void pattern22(){}
+
+
+    //       *
+    //     * * *
+    //   * * * * *
+    // * * * * * * *
+    //   * * * * *
+    //     * * *
+    //       *
+    public static void pattern23(){}
+
+
+    //              *
+    //          *       *
+    //      *               *
+    //  *                       *
+    //      *               *
+    //          *       *
+    //              *
+    public static void pattern24(){}
 
 
     //         1
@@ -363,7 +409,7 @@ public class patterns {
     //     3 3 3 3 3
     //   4 4 4 4 4 4 4
     // 5 5 5 5 5 5 5 5 5
-    public static void pattern20(){
+    public static void pattern25(){
         int n = 5;
 
         System.out.println("Using While Loop : ");
@@ -396,7 +442,7 @@ public class patterns {
     //         5   6   7   8   9
     //     10  11  12  13  14  15  16
     // 17  18  19  20  21  22  23  24  25
-    public static void pattern21(){
+    public static void pattern26(){
         int n = 5;
         int num = 1;
 
@@ -431,7 +477,7 @@ public class patterns {
     // 1 2 3
     // 1 2 3 4
     // 1 2 3 4 5
-    public static void pattern22(){
+    public static void pattern27(){
         int n = 5;
 
         System.out.println("Using For Loop : ");
@@ -444,12 +490,52 @@ public class patterns {
     }
 
 
+    //         1
+    //       1 2 3
+    //     1 2 3 4 5
+    //   1 2 3 4 5 6 7
+    // 1 2 3 4 5 6 7 8 9
+    public static void pattern28(){}
+
+
+    //         1
+    //       1 2 1
+    //     1 2 3 2 1
+    //   1 2 3 4 3 2 1
+    // 1 2 3 4 5 4 3 2 1
+    public static void pattern29(){}
+
+
+    //         1
+    //       2 3 2
+    //     3 4 5 4 3
+    //   4 5 6 7 6 5 4
+    // 5 6 7 8 9 8 7 6 5
+    public static void pattern30() {}
+
+
+    //         1
+    //       2 0 2
+    //     3 0 0 0 3
+    //   4 0 0 0 0 0 4
+    // 5 0 0 0 0 0 0 0 5
+    public static void pattern31() {}
+
+
+    // 5 4 3 2 1
+    // 5 4 3 2 1
+    // 5 4 3 2 1
+    // 5 4 3 2 1
+    // 5 4 3 2 1
+    public static void pattern32(){}
+
+
     // 5 4 3 2 *
     // 5 4 3 * 1
     // 5 4 * 2 1
     // 5 * 3 2 1
     // * 4 3 2 1
-    public static void pattern23(){
+    public static void pattern33(){
         int n = 5;
 
         System.out.println("Using For Loop : ");
@@ -465,6 +551,33 @@ public class patterns {
         }
     }
 
+
+
+//                   0
+//                 9 0 9
+//               8 9 0 9 8
+//             7 8 9 0 9 8 7
+//           6 7 8 9 0 9 8 7 6
+//         5 6 7 8 9 0 9 8 7 6 5
+//       4 5 6 7 8 9 0 9 8 7 6 5 4
+//     3 4 5 6 7 8 9 0 9 8 7 6 5 4 3
+//   2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2
+// 1 2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2 1
+public static void pattern34(){}
+
+
+// 1 
+// 2 * 2 
+// 3 * 3 * 3 
+// 4 * 4 * 4 * 4 
+// 5 * 5 * 5 * 5 * 5 
+// 4 * 4 * 4 * 4 
+// 3 * 3 * 3 
+// 2 * 2 
+// 1
+public static void pattern35(){}
+
+
     // *       * * * * *
     // *       *
     // *       *
@@ -474,7 +587,7 @@ public class patterns {
     //         *       *
     //         *       *
     // * * * * *       *
-    public static void pattern24(){}
+    public static void pattern36(){}
 
 
     public static void main(String[] args) {
@@ -502,5 +615,17 @@ public class patterns {
         // pattern22();
         pattern23();
         // pattern24();
+        // pattern25();
+        // pattern26();
+        // pattern27();
+        // pattern28();
+        // pattern29();
+        // pattern30();
+        // pattern31();
+        // pattern32();
+        // pattern33();
+        // pattern34();
+        // pattern35();
+        // pattern36();
     }
 }
