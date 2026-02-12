@@ -35,13 +35,23 @@ public class lec9 {
         return 0;
     }
 
-    public static void maxThree(int a, int b, int c) {
+    public static void maxThree1(int a, int b, int c) {
         if (a > b && a > c) {
             System.out.println(a);
         } else if (b > c) {
             System.out.println(b);
         } else {
             System.out.println(c);
+        }
+    }
+
+    public static int maxThree2(int a, int b, int c){
+        if(a > b && a > c){
+            return a;
+        } else if (b > c) {
+            return b;
+        } else {
+            return c;
         }
     }
 
@@ -61,6 +71,9 @@ public class lec9 {
         max2(a, b);
 
         int c = 15;
-        maxThree(a, b, c);
+        maxThree1(a, b, c);
+        
+        int max = maxThree2(a, b, c);
+        System.out.println(max);
     }
 }
