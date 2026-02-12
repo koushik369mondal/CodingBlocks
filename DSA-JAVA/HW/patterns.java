@@ -298,7 +298,12 @@ public static void pattern8() {}
     //     *   *   *
     //   *   *   *   *
     // *   *   *   *   *
-    public static void pattern11(){}
+    public static void pattern11(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        
+    }
 
 
     //         *
@@ -521,7 +526,13 @@ public static void pattern8() {}
     //     1 2 3 4 5
     //   1 2 3 4 5 6 7
     // 1 2 3 4 5 6 7 8 9
-    public static void pattern28(){}
+    public static void pattern28(){
+        int n = 5;
+        for(int i=1; i<=5; i++){
+            //space
+            
+        }
+    }
 
 
     //         1
@@ -626,8 +637,8 @@ public static void pattern35(){}
         // pattern7();
         // pattern8();
         // pattern9();
-        pattern10();
-        // pattern11();
+        // pattern10();
+        pattern11();
         // pattern12();
         // pattern13();
         // pattern14();
