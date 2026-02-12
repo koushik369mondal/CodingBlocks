@@ -338,7 +338,38 @@ public static void pattern8() {}
     //     * ! * ! *
     //   * ! * ! * ! *
     // * ! * ! * ! * ! *
-    public static void pattern12(){}
+    public static void pattern12(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+
+        System.out.println("Using While Loop : ");
+        int space = n - 1;
+        int star = 1;
+        int row = 1;
+        while(row <= n){
+            //space
+            int i = 1;
+            while(i <= space){
+                System.out.print("   ");
+                i++;
+            }
+            //star
+            int j = 1;
+            while(j <= star){
+                if(j % 2 == 1){
+                    System.out.print(" * ");
+                } else {
+                    System.out.print(" ! ");
+                }
+                j++;
+            }
+            System.out.println();
+            row++;
+            space--;
+            star += 2;
+        }
+    }
 
 
     // *                 *
@@ -665,8 +696,8 @@ public static void pattern35(){}
         // pattern8();
         // pattern9();
         // pattern10();
-        pattern11();
-        // pattern12();
+        // pattern11();
+        pattern12();
         // pattern13();
         // pattern14();
         // pattern15();
