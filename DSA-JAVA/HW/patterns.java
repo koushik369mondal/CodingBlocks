@@ -410,8 +410,23 @@ public static void pattern8() {}
     // * * *         * * *
     // * * * *     * * * *
     // * * * * * * * * * *
-    public static void pattern13(){
-        int n = 5;
+    public static void pattern13(int n){
+        System.out.println("Using For Loop : ");
+        for(int i=1; i<=n; i++){
+            //star
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            //space
+            for(int space=1; space<=(n-i)*2; space++){
+                System.out.print("   ");
+            }
+            //star
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
     }
 
 
@@ -730,9 +745,9 @@ public static void pattern35(){}
         // pattern8();
         // pattern9();
         // pattern10();
-        pattern11(5);
+        // pattern11(5);
         // pattern12();
-        // pattern13();
+        pattern13(4);
         // pattern14();
         // pattern15();
         // pattern16();
