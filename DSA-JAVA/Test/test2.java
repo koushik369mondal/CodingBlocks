@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test1 {
+public class test2 {
     public static int reverse(int n){
         int rev = 0;
         while(n > 0){
