@@ -808,7 +808,23 @@ public static void pattern8(int n) {
     //     3 0 0 0 3
     //   4 0 0 0 0 0 4
     // 5 0 0 0 0 0 0 0 5
-    public static void pattern31() {}
+    public static void pattern31(int n) {
+        for(int i=1; i<=n; i++){
+            //space
+            for(int j=1; j<=n-i+1; j++){
+                System.out.print("  ");
+            }
+            //number
+            for(int k=1; k<=2*i-1; k++){
+                if(k==1 || k==2*i-1){
+                    System.out.print(i + " ");
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
 
     // 5 4 3 2 1
@@ -908,8 +924,8 @@ public static void pattern35(){}
         // pattern27();
         // pattern28(5);
         // pattern29(5);
-        pattern30(5);
-        // pattern31();
+        // pattern30(5);
+        pattern31(5);
         // pattern32();
         // pattern33();
         // pattern34();
