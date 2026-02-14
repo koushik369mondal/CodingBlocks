@@ -745,7 +745,7 @@ public static void pattern8(int n) {
             for(int j=1; j<n-i+1; j++){
                 System.out.print("  ");
             }
-            //star
+            //number
             for(int k=1; k<=2*i-1; k++){
                 System.out.print(k + " ");
             }
@@ -759,7 +759,24 @@ public static void pattern8(int n) {
     //     1 2 3 2 1
     //   1 2 3 4 3 2 1
     // 1 2 3 4 5 4 3 2 1
-    public static void pattern29(){}
+    public static void pattern29(int n){
+        for(int i=1; i<=n; i++){
+            //space
+            for(int j=1; j<=n-i; j++){
+                System.out.print("  ");
+            }
+            //numbers
+            for(int k=1; k<=i; k++){
+                System.out.print(k + " ");
+            }
+            // numbers
+            for (int k = i-1; k >= 1; k--) {
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+    }
+    
 
 
     //         1
@@ -873,8 +890,8 @@ public static void pattern35(){}
         // pattern25();
         // pattern26();
         // pattern27();
-        pattern28(5);
-        // pattern29();
+        // pattern28(5);
+        pattern29(5);
         // pattern30();
         // pattern31();
         // pattern32();
