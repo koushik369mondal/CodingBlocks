@@ -1,16 +1,14 @@
 package HW;
 
+import java.util.Scanner;
+
 public class patterns {
-    
-
     // * * * * *
     // * * * * *
     // * * * * *
     // * * * * *
     // * * * * *
-    public static void pattern1(){
-        int n = 5;
-
+    public static void pattern1(int n){
         System.out.println("Using For Loop : ");
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
@@ -18,7 +16,6 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int row = 1;
         while(row <= n){
@@ -33,15 +30,12 @@ public class patterns {
         }
     }
 
-
     // *
     // * *
     // * * *
     // * * * *
     // * * * * *
-    public static void pattern2(){
-        int n = 5;
-
+    public static void pattern2(int n){
         System.out.println("Usinng For Loop : ");
         for(int i=1; i<=n; i++){
             for(int j=1; j<=i; j++){
@@ -49,7 +43,6 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int row = 1;
         while(row<=n){
@@ -63,15 +56,12 @@ public class patterns {
         }
     }
 
-
     // * * * * *
     // * * * *
     // * * *
     // * *
     // *
-    public static void pattern3(){
-        int n = 5;
-
+    public static void pattern3(int n){
         System.out.println("Using For Loop : ");
         for(int i=n; i>=1; i--){ 
             for(int j=1; j<=i; j++){ 
@@ -79,7 +69,6 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int row = n;
         while(row >= 1){
@@ -93,15 +82,12 @@ public class patterns {
         }
     }
 
-
     //         *
     //       * *
     //     * * *
     //   * * * *
     // * * * * *
-    public static void pattern4(){
-        int n = 5;
-
+    public static void pattern4(int n){
         System.out.println("Using For Loop : ");
         for(int row=1; row<=n; row++){
             //space
@@ -114,7 +100,6 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int row = 1;
         while(row <= n){
@@ -135,15 +120,12 @@ public class patterns {
         }
     }
 
-
     // * * * * *
     //   * * * *
     //     * * *
     //       * *
     //         *
-    public static void pattern5(){
-        int n = 5;
-
+    public static void pattern5(int n){
         System.out.println("Using For Loop : ");
         for(int i=1; i<=n; i++){
             //space
@@ -156,7 +138,6 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int i = 1;
         while(i<=n){
@@ -177,15 +158,12 @@ public class patterns {
         }
     }
 
-
     // * * * * *
     //     * * * *
     //         * * *
     //             * *
     //                 *
-    public static void pattern6(){
-        int n = 5;
-
+    public static void pattern6(int n){
         System.out.println("Using For Loop : ");
         for(int i=1; i<=n; i++){
             //space
@@ -202,17 +180,14 @@ public class patterns {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
     }
 
-
     // * * * * *
     // *       *
     // *       *
     // * * * * *
-    public static void pattern7(){
-        int n = 5;
+    public static void pattern7(int n){
         for(int i=1; i<n; i++){
             for(int j=1; j<=n; j++){
                 if(i==1 || i==(n-1) || j==1 || j==n){
@@ -224,7 +199,6 @@ public class patterns {
             System.out.println();
         }
     }
-
 
 //  *               *
 //      *       *
@@ -244,15 +218,12 @@ public static void pattern8(int n) {
     }
 }
 
-
     //         *
     //       * * *
     //     * * * * *
     //   * * * * * * *
     // * * * * * * * * *
-    public static void pattern9(){
-        int n = 5;
-
+    public static void pattern9(int n){
         System.out.println("Using For Loop : ");
         for (int i=1; i<=n; i++){
             //space
@@ -265,7 +236,6 @@ public static void pattern8(int n) {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
@@ -290,15 +260,12 @@ public static void pattern8(int n) {
         }
     }
 
-
     // * * * * * * * * *
     //   * * * * * * *
     //     * * * * *
     //       * * *
     //         *
-    public static void pattern10(){
-        int n = 5;
-
+    public static void pattern10(int n){
         System.out.println("Using For Loop : ");
         for(int i=1; i<=n; i++){
             //space
@@ -311,7 +278,6 @@ public static void pattern8(int n) {
             }
             System.out.println();
         }
-
         System.out.println("Using While Loop : ");
         int space = 0;
         int star = 2 * n - 1;
@@ -336,17 +302,13 @@ public static void pattern8(int n) {
         }
     }
 
-
     //         *
     //       *   *
     //     *   *   *
     //   *   *   *   *
     // *   *   *   *   *
     public static void pattern11(int n){
-        // int n = 5;
-
-        System.out.println("Using For Loop : ");
-        
+        System.out.println("Using For Loop : ");        
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
@@ -376,17 +338,13 @@ public static void pattern8(int n) {
         }
     }
 
-
     //         *
     //       * ! *
     //     * ! * ! *
     //   * ! * ! * ! *
     // * ! * ! * ! * ! *
-    public static void pattern12(){
-        int n = 5;
-
+    public static void pattern12(int n){
         System.out.println("Using For Loop : ");
-
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
@@ -415,7 +373,6 @@ public static void pattern8(int n) {
         }
     }
 
-
     // *                 *
     // * *             * *
     // * * *         * * *
@@ -440,7 +397,6 @@ public static void pattern8(int n) {
         }
     }
 
-
     // *               *
     // * *           * *
     // * * *       * * *
@@ -448,14 +404,12 @@ public static void pattern8(int n) {
     // * * * * * * * * *
     public static void pattern14(){}
 
-
     // * * * * * * * * *
     // * * * *   * * * *
     // * * *       * * *
     // * *           * *
     // *               *
     public static void pattern15(){}
-
 
     // *
     // * *
@@ -481,7 +435,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     //         *
     //       * *
@@ -518,7 +471,6 @@ public static void pattern8(int n) {
             }
     }
 
-
     //         * * * * *
     //       * * * *
     //     * * *
@@ -552,7 +504,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     // * * * * *
     //     * * * *
@@ -598,13 +549,11 @@ public static void pattern8(int n) {
         
     }
 
-
     // * * * *   * * * *
     // * * *       * * *
     // * *           * *
     // *               *
     public static void pattern20(){}
-
 
     // * * * *   * * * *
     // * * *       * * *
@@ -617,7 +566,6 @@ public static void pattern8(int n) {
     // * * * *   * * * *
     public static void pattern21(){}
 
-
     // * * * * * * *
     // * * *   * * *
     // * *       * *
@@ -626,7 +574,6 @@ public static void pattern8(int n) {
     // * * *   * * *
     // * * * * * * *
     public static void pattern22(){}
-
 
     //       *
     //     * * *
@@ -637,7 +584,6 @@ public static void pattern8(int n) {
     //       *
     public static void pattern23(){}
 
-
     //              *
     //          *       *
     //      *               *
@@ -647,15 +593,12 @@ public static void pattern8(int n) {
     //              *
     public static void pattern24(){}
 
-
     //         1
     //       2 2 2
     //     3 3 3 3 3
     //   4 4 4 4 4 4 4
     // 5 5 5 5 5 5 5 5 5
-    public static void pattern25(){
-        int n = 5;
-
+    public static void pattern25(int n){
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
@@ -680,20 +623,17 @@ public static void pattern8(int n) {
         }
     }
 
-
     //                 1
     //             2   3   4
     //         5   6   7   8   9
     //     10  11  12  13  14  15  16
     // 17  18  19  20  21  22  23  24  25
-    public static void pattern26(){
-        int n = 5;
-        int num = 1;
-
+    public static void pattern26(int n){
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
         int row = 1;
+        int num = 1;
         while (row <= n) {
             // space
             int i = 1;
@@ -715,15 +655,12 @@ public static void pattern8(int n) {
         }
     }
 
-
     // 1
     // 1 2
     // 1 2 3
     // 1 2 3 4
     // 1 2 3 4 5
-    public static void pattern27(){
-        int n = 5;
-
+    public static void pattern27(int n){
         System.out.println("Using For Loop : ");
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= i; j++){
@@ -732,7 +669,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     //         1
     //       1 2 3
@@ -752,7 +688,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     //         1
     //       1 2 1
@@ -778,7 +713,6 @@ public static void pattern8(int n) {
     }
     
 
-
     //         1
     //       2 3 2
     //     3 4 5 4 3
@@ -801,7 +735,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     //         1
     //       2 0 2
@@ -826,7 +759,6 @@ public static void pattern8(int n) {
         }
     }
 
-
     // 5 4 3 2 1
     // 5 4 3 2 1
     // 5 4 3 2 1
@@ -840,7 +772,6 @@ public static void pattern8(int n) {
             System.out.println();
         }
     }
-
 
     // 5 4 3 2 *
     // 5 4 3 * 1
@@ -861,7 +792,6 @@ public static void pattern8(int n) {
         }
     }
 
-
 //                   0
 //                 9 0 9
 //               8 9 0 9 8
@@ -874,7 +804,6 @@ public static void pattern8(int n) {
 // 1 2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2 1
 public static void pattern34(){}
 
-
 // 1 
 // 2 * 2 
 // 3 * 3 * 3 
@@ -885,7 +814,6 @@ public static void pattern34(){}
 // 2 * 2 
 // 1
 public static void pattern35(){}
-
 
     // *       * * * * *
     // *       *
@@ -898,41 +826,42 @@ public static void pattern35(){}
     // * * * * *       *
     public static void pattern36(){}
 
-
     public static void main(String[] args) {
-        // pattern1();
-        // pattern2();
-        // pattern3();
-        // pattern4();
-        // pattern5();
-        // pattern6();
-        // pattern7();
-        // pattern8(5);
-        // pattern9();
-        // pattern10();
-        // pattern11(5);
-        // pattern12();
-        // pattern13(4);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // pattern1(n);
+        // pattern2(n);
+        // pattern3(n);
+        // pattern4(n);
+        // pattern5(n);
+        // pattern6(n);
+        // pattern7(n);
+        // pattern8(n);
+        // pattern9(n);
+        // pattern10(n);
+        // pattern11(n);
+        // pattern12(n);
+        // pattern13(n);
         // pattern14();
         // pattern15();
-        // pattern16(5);
-        // pattern17(5);
-        // pattern18(5);
-        // pattern19(5);
+        // pattern16(n);
+        // pattern17(n);
+        // pattern18(n);
+        // pattern19(n);
         // pattern20();
         // pattern21();
         // pattern22();
         // pattern23();
         // pattern24();
-        // pattern25();
-        // pattern26();
-        // pattern27();
-        // pattern28(5);
-        // pattern29(5);
-        // pattern30(5);
-        // pattern31(5);
-        pattern32(5);
-        // pattern33(5);
+        // pattern25(n);
+        // pattern26(n);
+        // pattern27(n);
+        // pattern28(n);
+        // pattern29(n);
+        // pattern30(n);
+        // pattern31(n);
+        // pattern32(n);
+        // pattern33(n);
         // pattern34();
         // pattern35();
         // pattern36();
