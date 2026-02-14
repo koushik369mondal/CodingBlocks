@@ -922,7 +922,7 @@ public static void pattern8(int n) {
 //     3 4 5 6 7 8 9 0 9 8 7 6 5 4 3
 //   2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2
 // 1 2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2 1
-public static void pattern34(){}
+public static void pattern34(int n){}
 
 // 1 
 // 2 * 2 
@@ -933,7 +933,7 @@ public static void pattern34(){}
 // 3 * 3 * 3 
 // 2 * 2 
 // 1
-public static void pattern35(){}
+public static void pattern35(int n){}
 
     // *       * * * * *
     // *       *
@@ -972,7 +972,7 @@ public static void pattern35(){}
         // pattern21(n);
         // pattern22(n);
         // pattern23(n);
-        pattern24(n);
+        // pattern24(n);
         // pattern25(n);
         // pattern26(n);
         // pattern27(n);
@@ -982,8 +982,8 @@ public static void pattern35(){}
         // pattern31(n);
         // pattern32(n);
         // pattern33(n);
-        // pattern34();
-        // pattern35();
+        // pattern34(n);
+        pattern35(n);
         // pattern36();
         sc.close();
     }
