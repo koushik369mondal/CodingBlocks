@@ -110,7 +110,18 @@ public class ass2 {
     // 3 0 3 
     // 4 0 0 4 
     // 5 0 0 0 5
-    public static void pattern7(){}
+    public static void pattern7(int n){
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                if(j==1 || j==i){
+                    System.out.print(i + "\t");
+                } else {
+                    System.out.print("0\t");
+                }
+            }
+            System.out.println();
+        }
+    }
 
     // 0 
     // 1 1 
@@ -185,7 +196,8 @@ public class ass2 {
         // pattern1(n);
         // pattern3(n);
         // pattern4(n);
-        pattern5(n);
+        // pattern5(n);
+        pattern7(n);
         sc.close();
     }
 }
