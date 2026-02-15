@@ -28,31 +28,32 @@ public class ass2 {
     // 4 5 6 7 6 5 4
     public static void pattern2(){}
 
-    //       *
-    //    *  *  *  
-    // *  *  *  *  *  
-    //    *  *  *
-    //       *
+    //          *
+    //      *   *   *  
+    //  *   *   *   *   *  
+    //      *   *   *
+    //          *
     public static void pattern3(int n){
-        for(int i=1; i<=n; i++){
-            //space
-            for(int j=1; j<=n-i; j++){
-                System.out.print("   ");
+        int mid = n / 2 + 1;
+        for(int i=1; i<=mid; i++){
+            // space
+            for(int j=1; j<=mid-i; j++){
+                System.out.print("\t");
             }
-            //star
+            // stars
             for(int k=1; k<=2*i-1; k++){
-                System.out.print(" * ");
+                System.out.print("\t*");
             }
             System.out.println();
         }
-        for(int i=n-1; i>=1; i--){
+        for(int i=mid-1; i>=1; i--){
             // space
-            for (int j = 1; j <= n - i; j++) {
-                System.out.print("   ");
+            for (int j = 1; j <= mid - i; j++) {
+                System.out.print("\t");
             }
-            // star
+            // stars
             for (int k = 1; k <= 2 * i - 1; k++) {
-                System.out.print(" * ");
+                System.out.print("\t*");
             }
             System.out.println();
         }
