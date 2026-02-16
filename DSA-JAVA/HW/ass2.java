@@ -103,7 +103,7 @@ public class ass2 {
     // 3 4 5 4 3 
     //   2 3 2 
     //     1
-    public static void pattern6(){}
+    public static void pattern6(int n){}
 
     // 1 
     // 2 2 
@@ -198,7 +198,40 @@ public class ass2 {
     //     3 2 1 0 1 2 3 
     //   4 3 2 1 0 1 2 3 4 
     // 5 4 3 2 1 0 1 2 3 4 5
-    public static void pattern14(){}
+    public static void pattern14(int n){
+        //uper half
+        for(int i=n; i>=0; i--){
+            //space
+            for(int j=1; j<=(n-i)*2; j++){
+                System.out.print(" ");
+            }
+            //descending 
+            for(int k=i; k>=0; k--){
+                System.out.print(k + " ");
+            }
+            //ascendiing
+            for(int k=1; k<=i; k++){
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+        //lower half
+        for(int i=1; i<=n; i++){
+            // space
+            for (int j = 1; j <= (n - i) * 2; j++) {
+                System.out.print(" ");
+            }
+            // descending
+            for (int k = i; k >= 0; k--) {
+                System.out.print(k + " ");
+            }
+            // ascendiing
+            for (int k = 1; k <= i; k++) {
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -209,11 +242,13 @@ public class ass2 {
         // pattern3(n);
         // pattern4(n);
         // pattern5(n);
+        // pattern6(n);
         // pattern7(n);
         // pattern8(n);
         // pattern11(n);
         // pattern12(n);
-        pattern13(n);
+        // pattern13(n);
+        pattern14(n);
         sc.close();
     }
 }

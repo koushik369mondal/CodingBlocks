@@ -975,7 +975,9 @@ public static void pattern35(int n){
     //         *       *
     //         *       *
     // * * * * *       *
-    public static void pattern36(){}
+    public static void pattern36(int n){
+        
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
