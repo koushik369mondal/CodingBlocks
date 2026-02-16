@@ -431,7 +431,11 @@ public static void pattern8(int n) {
     // * * *       * * *
     // * *           * *
     // *               *
-    public static void pattern15(){}
+    public static void pattern15(int n){
+        for(int i=1; i<=n; i++){
+            
+        }
+    }
 
     // *
     // * *
@@ -968,8 +972,8 @@ public static void pattern35(int n){}
         // pattern11(n);
         // pattern12(n);
         // pattern13(n);
-        pattern14(n);
-        // pattern15();
+        // pattern14(n);
+        pattern15(n);
         // pattern16(n);
         // pattern17(n);
         // pattern18(n);
