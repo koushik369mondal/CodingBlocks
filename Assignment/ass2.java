@@ -1,4 +1,4 @@
-package HW;
+package Assignment;
 import java.util.Scanner;
 public class ass2 {
     //  * * * * *
@@ -420,7 +420,7 @@ public class ass2 {
         System.out.println();
         
         // lower half
-        for(int i=n-1; i>=1; i--){
+        for(int i=n; i>=1; i--){
             // descending numbers
             for(int j=n; j>=n-i+1; j--){
                 System.out.print(j + " ");
@@ -495,11 +495,11 @@ public class ass2 {
         // pattern6(n);
         // pattern7(n);
         // pattern8(n);
-        pattern9(n);
+        // pattern9(n);
         // pattern10(n);
         // pattern11(n);
         // pattern12(n);
-        // pattern13(n);
+        pattern13(n);
         // pattern14(n);
         sc.close();
     }

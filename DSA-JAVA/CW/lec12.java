@@ -72,6 +72,17 @@ public class lec12 {
         }
     }
 
+    public static void rightShift(int arr[]) {
+        int temp = arr[arr.length - 1];
+        for (int i = arr.length - 2; i >= 0; i--) {
+            arr[i + 1] = arr[i];
+        }
+        arr[0] = temp;
+        for (int k = 0; k < arr.length; k++) {
+            System.out.print(arr[k] + " ");
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = new int[5];
@@ -92,6 +103,8 @@ public class lec12 {
         // reverseArray(arr);
 
         leftShift(arr);
+        System.out.println();
+        rightShift(arr);
 
         sc.close();
     }
