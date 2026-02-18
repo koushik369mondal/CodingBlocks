@@ -321,54 +321,38 @@ public class ass2 {
     //         2 1   1 2 
     //             1
     public static void pattern11(int n){
-        // upper half
-        for(int i=1; i<=n; i++){
-            // space
-            for(int j=1; j<=n-i; j++){
-                System.out.print("    ");
+        int mid = n / 2 + 1;
+        int count = 1;
+        int Lspace = (mid - 1) * 2;
+        int Mspace = 0;
+        for (int row = 1; row <= n; row++) {
+            // left spaces
+            for (int LS = 1; LS <= Lspace; LS++) {
+                System.out.print("  ");
             }
-            // descending numbers
-            for(int j=i; j>=1; j--){
-                System.out.print(j + " ");
+            // left numbers
+            for (int i = count; i >= 1; i--) {
+                System.out.print(i + " ");
             }
-            // middle spaces
-            if(i > 1){
-                for(int j=1; j<=(2*(i-1)-1)*2; j++){
-                    System.out.print(" ");
+            // middle spaces + right numbers
+            if (row != 1 && row != n) {
+                for (int s = 1; s <= Mspace * 2 - 1; s++) {
+                    System.out.print("  ");
                 }
-            }
-            // ascending numbers
-            if(i > 1){
-                for(int j=1; j<=i; j++){
-                    System.out.print(j + " ");
-                }
-            }
-            System.out.println();
-        }
-        
-        // lower half
-        for(int i=n-1; i>=1; i--){
-            // space
-            for(int j=1; j<=n-i; j++){
-                System.out.print("    ");
-            }
-            // descending numbers
-            for(int j=i; j>=1; j--){
-                System.out.print(j + " ");
-            }
-            // middle spaces
-            if(i > 1){
-                for(int j=1; j<=(2*(i-1)-1)*2; j++){
-                    System.out.print(" ");
-                }
-            }
-            // ascending numbers
-            if(i > 1){
-                for(int j=1; j<=i; j++){
-                    System.out.print(j + " ");
+                for (int i = 1; i <= count; i++) {
+                    System.out.print(i + " ");
                 }
             }
             System.out.println();
+            if (row < mid) {
+                Lspace -= 2;
+                count++;
+                Mspace++;
+            } else {
+                Lspace += 2;
+                count--;
+                Mspace--;
+            }
         }
     }
 
@@ -505,7 +489,7 @@ public class ass2 {
         // pattern8(n);
         // pattern9(n);
         // pattern10(n);
-        // pattern11(n);
+        pattern11(n);
         // pattern12(n);
         // pattern13(n);
         // pattern14(n);
