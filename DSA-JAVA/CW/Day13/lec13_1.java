@@ -1,4 +1,4 @@
-
+package CW.Day13;
 import java.util.Scanner;
 
 public class lec13_1 {

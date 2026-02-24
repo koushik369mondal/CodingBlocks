@@ -1,4 +1,4 @@
-package A2;
+package Assignment.A2;
 import java.util.Scanner;
 public class ass2 {
     //  * * * * *
