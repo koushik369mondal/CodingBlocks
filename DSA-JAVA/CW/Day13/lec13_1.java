@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class lec13_1 {
@@ -10,7 +11,7 @@ public class lec13_1 {
         reverse(nums, 0, k - 1); // Reverse first k elements
         reverse(nums, k, n - 1); // Reverse remaining elements
     }
-    
+
     public static void reverse(int[] nums, int start, int end) {
         while (start < end) {
             int temp = nums[start];
