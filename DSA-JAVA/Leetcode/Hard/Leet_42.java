@@ -1,5 +1,5 @@
-package Leetcode.Hard;
 // 42. Trapping Rain Water
+package Leetcode.Hard;
 public class Leet_42 {
 
     public int trap(int[] height){
