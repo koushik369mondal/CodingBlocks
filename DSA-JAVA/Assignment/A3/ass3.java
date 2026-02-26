@@ -60,6 +60,20 @@ public class ass3 {
     // Print Series
 
     // LCM
+    public static void LCM(){
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+        sc.close();
+        int max = Math.max(N1, N2);
+        while(true){
+            if(max % N1 == 0 && max % N2 == 0){
+                System.out.println(max);
+                break;
+            }
+            max++;
+        }
+    }
 
     // Nth Fibonacci (Hard)
 
@@ -106,6 +120,7 @@ public class ass3 {
         // printReverse();
         // checkPrime();
         // countDigits();
-        sumOfOddEven();
+        // sumOfOddEven();
+        LCM();
     }
 }
