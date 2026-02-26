@@ -7,6 +7,21 @@ public class ass3 {
     // Sum of odd placed and even placed digits
 
     // Count Digits
+    public static void countDigits(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int digit = sc.nextInt();
+        sc.close();
+        int count = 0;
+        while(n > 0){
+            int rem = n % 10;
+            if(rem == digit){
+                count++;
+            }
+            n = n / 10;
+        }
+        System.out.println(count);
+    }
 
     // Print reverse
     public static void printReverse(){
@@ -69,6 +84,7 @@ public class ass3 {
 
     public static void main(String[] args) {
         // printReverse();
-        checkPrime();
+        // checkPrime();
+        countDigits();
     }
 }
