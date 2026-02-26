@@ -5,6 +5,26 @@ import java.util.Scanner;
 public class ass3 {
 
     // Sum of odd placed and even placed digits
+    public static void sumOfOddEven(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        int oddSum = 0;
+        int evenSum = 0;
+        int position = 1;
+        while(n > 0){
+            int rem = n % 10;
+            if(position % 2 == 0){
+                evenSum = evenSum + rem;
+            } else {
+                oddSum = oddSum + rem;
+            }
+            n = n / 10;
+            position++;
+        }
+        System.out.println(oddSum);
+        System.out.println(evenSum);
+    }
 
     // Count Digits
     public static void countDigits(){
@@ -85,6 +105,7 @@ public class ass3 {
     public static void main(String[] args) {
         // printReverse();
         // checkPrime();
-        countDigits();
+        // countDigits();
+        sumOfOddEven();
     }
 }
