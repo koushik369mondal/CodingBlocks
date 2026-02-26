@@ -1,8 +1,8 @@
-package Leetcode.Medium;
+package CW.Day17;
 
-public class Leet_134 {
+public class lec17_1 {
 
-    public static int canCompleteCircuit(int[] gas, int[] cost) {
+    public static int gasStation(int[] gas, int[] cost) {
         int totalTank = 0;
         int currentTank = 0;
         int start = 0;
@@ -21,6 +21,7 @@ public class Leet_134 {
     public static void main(String[] args) {
         int[] gas = {1, 2, 3, 4, 5};
         int[] cost = {3, 4, 5, 1, 2};
-        System.out.println(canCompleteCircuit(gas, cost));
+        int result = gasStation(gas, cost);
+        System.out.println(result);
     }
 }
