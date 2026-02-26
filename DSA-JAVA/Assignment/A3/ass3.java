@@ -31,6 +31,18 @@ public class ass3 {
     // Conversion (Fahrenheit to Celsius)
 
     // Check prime
+    public static void checkPrime(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                System.out.println("Not Prime");
+                return;
+            }
+        }
+        System.out.println("Prime");
+    }
 
     // GCD
 
@@ -56,6 +68,7 @@ public class ass3 {
 
 
     public static void main(String[] args) {
-        printReverse();
+        // printReverse();
+        checkPrime();
     }
 }

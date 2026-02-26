@@ -2,7 +2,7 @@ package Leetcode.Medium;
 
 public class Leet_134 {
 
-    public static int canCompleteCircuit(int[] gas, int[] cost) {
+    public int canCompleteCircuit(int[] gas, int[] cost) {
         int totalTank = 0;
         int currentTank = 0;
         int start = 0;
@@ -21,6 +21,7 @@ public class Leet_134 {
     public static void main(String[] args) {
         int[] gas = {1, 2, 3, 4, 5};
         int[] cost = {3, 4, 5, 1, 2};
-        System.out.println(canCompleteCircuit(gas, cost));
+        Leet_134 obj = new Leet_134();
+        System.out.println(obj.canCompleteCircuit(gas, cost));
     }
 }
