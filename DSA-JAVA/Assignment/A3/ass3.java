@@ -94,6 +94,20 @@ public class ass3 {
     }
 
     // GCD
+    public static void GCD(){
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+        sc.close();
+        while(N1 != N2){
+            if(N1 > N2){
+                N1 = N1 - N2;
+            } else {
+                N2 = N2 - N1;
+            }
+        }
+        System.out.println(N1);
+    }
 
     // Chewbacca and Number
 

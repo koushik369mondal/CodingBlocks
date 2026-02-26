@@ -125,11 +125,11 @@ public class test2 {
         // int n = sc.nextInt();
         // System.out.println(reverse(n));
 
-        // gcd(36, 60);
+        gcd(16, 24);
         
         // pattern1(n);
 
-        pattern2(5);
+        // pattern2(5);
 
         // pattern3(5);
 
