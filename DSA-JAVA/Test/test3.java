@@ -51,7 +51,25 @@ public class test3 {
         return false;
     }
 
-    // move all zeroes to end of array
+    // move all zeroes to end of array (eg. 1,0,1,1,0,1,0,1,0 -> 1,1,1,1,1,0,0,0,0)
+    public static void moveZeroes(){
+        int arr[] = {1,0,1,1,0,1,0,1,0};
+        int n = arr.length;
+        int count = 0; // count of non-zero elements
+        for(int i=0; i<n; i++){
+            if(arr[i] != 0){
+                arr[count] = arr[i];
+                count++;
+            }
+        }
+        while(count < n){
+            arr[count] = 0;
+            count++;
+        }
+        for(int i=0; i<n; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
 
     // Insersion sort
 
@@ -69,6 +87,7 @@ public class test3 {
     public static void main(String[] args) {
         // missingNumber();
         // trappingRainWater();
-        System.out.println(duplicateNumber());
+        // System.out.println(duplicateNumber());
+        moveZeroes();
     }
 }
