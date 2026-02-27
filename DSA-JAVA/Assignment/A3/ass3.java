@@ -112,6 +112,12 @@ public class ass3 {
     // Chewbacca and Number
 
     // Replace Them All
+    public static void replaceZero(){
+        Scanner sc = new Scanner(System.in);
+        String n = sc.next();
+        System.out.print(n.replace('0', '5'));
+        sc.close();
+    }
 
     // Simple Input
 
@@ -147,7 +153,7 @@ public class ass3 {
             sum += Math.pow(rem, digits);
             n /= 10;
         }
-        
+
         if (sum == original) {
             System.out.println("true");
         } else {
@@ -162,6 +168,7 @@ public class ass3 {
         // countDigits();
         // sumOfOddEven();
         // LCM();
-        isArmStrong();
+        // isArmStrong();
+        replaceZero();
     }
 }
