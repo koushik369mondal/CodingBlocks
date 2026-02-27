@@ -40,6 +40,16 @@ public class test3 {
     }                                                                               
 
     // duplicate number in an array
+    public static boolean duplicateNumber(){
+        int arr[] = {1, 2, 2, 3, 4};
+        int n = arr.length;
+        for(int i=0; i<n-1; i++){
+            if(arr[i] == arr[i+1]){
+                return true;
+            }
+        }
+        return false;
+    }
 
     // move all zeroes to end of array
 
@@ -58,6 +68,7 @@ public class test3 {
 
     public static void main(String[] args) {
         // missingNumber();
-        trappingRainWater();
+        // trappingRainWater();
+        System.out.println(duplicateNumber());
     }
 }
