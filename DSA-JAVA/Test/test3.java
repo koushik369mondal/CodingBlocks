@@ -93,6 +93,24 @@ public class test3 {
     //     2 3 2
     //   3 4 5 4 3
     // 4 5 6 7 6 5 4
+    public static void pattern1(){
+        int n = 4;
+        for(int i=1; i<=n; i++){
+            // spaces
+            for(int j=1; j<=n-i; j++){
+                System.out.print("  ");
+            }
+            // numbers
+            for(int j=i; j<2*i; j++){
+                System.out.print(j + " ");
+            }
+            // reverse numbers
+            for(int j=2*i-2; j>=i; j--){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
 
     // * * * * * 
     //     * * * *
@@ -105,6 +123,7 @@ public class test3 {
         // trappingRainWater();
         // System.out.println(duplicateNumber());
         // moveZeroes();
-        insertionSort();
+        // insertionSort();
+        pattern1();
     }
 }
