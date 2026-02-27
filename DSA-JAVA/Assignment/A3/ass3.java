@@ -128,6 +128,32 @@ public class ass3 {
     // Odd and Even back in Delhi
 
     // Is Armstrong Number
+    public static void isArmStrong(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        int original = n;
+        int sum = 0;
+        //Count digits
+        int temp = n;
+        int digits = 0;
+        while (temp > 0) {
+            digits++;
+            temp /= 10;
+        }
+        //Calculate Armstrong sum
+        while (n > 0) {
+            int rem = n % 10;
+            sum += Math.pow(rem, digits);
+            n /= 10;
+        }
+        
+        if (sum == original) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -135,6 +161,7 @@ public class ass3 {
         // checkPrime();
         // countDigits();
         // sumOfOddEven();
-        LCM();
+        // LCM();
+        isArmStrong();
     }
 }
