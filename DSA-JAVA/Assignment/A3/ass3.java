@@ -175,6 +175,30 @@ public class ass3 {
     // Inverse of number
 
     // Odd and Even back in Delhi
+    public static void oddEvenDelhi(){
+        Scanner sc = new Scanner(System.in);
+        int car = sc.nextInt();
+        for(int i=1; i<=car; i++){
+            int n = sc.nextInt();
+            int sumOdd = 0;
+            int sumEven = 0;
+            while(n > 0){
+                int lastDigit = n % 10; // get last digit
+                if(lastDigit % 2 == 0){
+                    sumEven = sumEven + lastDigit;
+                } else {
+                    sumOdd = sumOdd + lastDigit;
+                }
+                n = n/10; // remove last digit 
+            }
+            if(sumEven % 4 == 0 || sumOdd % 3 == 0){
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        }
+        sc.close();
+    }
 
     // Is Armstrong Number
     public static void isArmStrong(){
@@ -215,6 +239,7 @@ public class ass3 {
         // replaceZero();
         // simpleInput();
         // chewbacca();
-        binaryToDecimal();
+        // binaryToDecimal();
+        oddEvenDelhi();
     }
 }
