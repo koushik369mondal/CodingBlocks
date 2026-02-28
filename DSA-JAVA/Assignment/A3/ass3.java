@@ -56,6 +56,20 @@ public class ass3 {
     }
 
     // Binary To Decimal
+    public static void binaryToDecimal(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int decimal = 0; 
+        int powerOfTwo = 1; // represents 2^0
+        while (n > 0) {
+            int digit = n % 10;
+            decimal += digit * powerOfTwo;
+            powerOfTwo = powerOfTwo * 2; // move to the next power of 2
+            n /= 10;
+        }
+        System.out.println(decimal);
+        sc.close();
+    }
 
     // Print Series
 
@@ -200,6 +214,7 @@ public class ass3 {
         // isArmStrong();
         // replaceZero();
         // simpleInput();
-        chewbacca();
+        // chewbacca();
+        binaryToDecimal();
     }
 }
