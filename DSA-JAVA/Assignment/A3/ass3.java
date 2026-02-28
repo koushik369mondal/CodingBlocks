@@ -110,6 +110,22 @@ public class ass3 {
     }
 
     // Chewbacca and Number
+    public static void chewbacca(){
+        Scanner sc = new Scanner(System.in);
+        String num = sc.next();
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < num.length(); i++) {
+            int digit = num.charAt(i) - '0';
+            int inverted = 9 - digit;
+            if (i == 0 && inverted == 0) {
+                result.append(digit);
+            } else {
+                result.append(Math.min(digit, inverted));
+            }
+        }
+        System.out.println(result);
+        sc.close();
+    }
 
     // Replace Them All
     public static void replaceZero(){
@@ -183,6 +199,7 @@ public class ass3 {
         // LCM();
         // isArmStrong();
         // replaceZero();
-        simpleInput();
+        // simpleInput();
+        chewbacca();
     }
 }

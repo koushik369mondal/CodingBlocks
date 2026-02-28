@@ -52,7 +52,7 @@ public class test3 {
     }
 
     // move all zeroes to end of array (eg. 1,0,1,1,0,1,0,1,0 -> 1,1,1,1,1,0,0,0,0)
-    public static void moveZeroes(){
+    public static void moveZeroes1(){
         int arr[] = {1,0,1,1,0,1,0,1,0};
         int n = arr.length;
         int count = 0; // count of non-zero elements
@@ -69,6 +69,11 @@ public class test3 {
         for(int i=0; i<n; i++){
             System.out.print(arr[i] + " ");
         }
+    }
+
+    // different way
+    public static void moveZeroes2(){
+        
     }
 
     // Insersion sort
