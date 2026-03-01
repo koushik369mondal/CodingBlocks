@@ -406,25 +406,25 @@ public class ass3 {
 
 
     public static void main(String[] args) {
-        // printReverse();
-        // checkPrime();
-        // GCD();
-        // countDigits();
         // sumOfOddEven();
-        // LCM();
-        // isArmStrong();
-        // replaceZero();
-        // simpleInput();
-        // chewbacca();
+        // countDigits();
+        // printReverse();
         // binaryToDecimal();
-        // oddEvenDelhi();
-        // printArmstrongNums();
         // printSeries();
+        // LCM();
         // nthFibonacci();
         // fahrenheitToCelsius();
+        // checkPrime();
+        // GCD();
+        // chewbacca();
+        // replaceZero();
+        // simpleInput();
+        // printArmstrongNums();
         // anyToAny();
         // bostonNumbers();
         // shoppingGame();
         inverseOfNumber();
+        // oddEvenDelhi();
+        // isArmStrong();
     }
 }
