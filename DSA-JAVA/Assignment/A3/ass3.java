@@ -304,6 +304,35 @@ public class ass3 {
     }
 
     // Shopping Game
+    public static void shoppingGame(){
+        Scanner sc = new Scanner(System.in);
+        int game = sc.nextInt();
+        while (game > 0) {
+            int m = sc.nextInt(); // Aayush limit
+            int n = sc.nextInt(); // Harshit limit
+            int A = 0; // total bought by Aayush
+            int H = 0; // total bought by Harshit
+            int count = 1;
+            while (true) {
+                if (count % 2 == 1) { // Aayush turn
+                    if (A + count > m) {
+                        System.out.println("Harshit");
+                        break;
+                    }
+                    A += count;
+                } else { // Harshit turn
+                    if (H + count > n) {
+                        System.out.println("Aayush");
+                        break;
+                    }
+                    H += count;
+                }
+                count++;
+            }
+            game--;
+        }
+        sc.close();
+    }
 
     // Inverse of number
 
@@ -380,6 +409,7 @@ public class ass3 {
         // nthFibonacci();
         // fahrenheitToCelsius();
         // anyToAny();
-        bostonNumbers();
+        // bostonNumbers();
+        shoppingGame();
     }
 }
