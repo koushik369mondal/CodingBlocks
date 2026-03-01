@@ -72,6 +72,20 @@ public class ass3 {
     }
 
     // Print Series
+    public static void printSeries(){
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+        sc.close();
+        int count = 0;
+        for (int n = 1; count < N1; n++) {
+            int value = 3 * n + 2;
+            if (value % N2 != 0) {
+                System.out.println(value);
+                count++;
+            }
+        }
+    }
 
     // LCM
     public static void LCM(){
@@ -269,5 +283,6 @@ public class ass3 {
         // binaryToDecimal();
         // oddEvenDelhi();
         printArmstrongNums();
+        printSeries();
     }
 }
