@@ -335,6 +335,20 @@ public class ass3 {
     }
 
     // Inverse of number
+    public static void inverseOfNumber(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int inverse = 0;
+        int position = 1;
+        while (n > 0) {
+            int digit = n % 10;
+            inverse += position * (int) Math.pow(10, digit - 1);
+            n /= 10;
+            position++;
+        }
+        System.out.println(inverse);
+        sc.close();
+    }
 
     // Odd and Even back in Delhi
     public static void oddEvenDelhi(){
@@ -410,6 +424,7 @@ public class ass3 {
         // fahrenheitToCelsius();
         // anyToAny();
         // bostonNumbers();
-        shoppingGame();
+        // shoppingGame();
+        inverseOfNumber();
     }
 }
