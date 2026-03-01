@@ -104,6 +104,18 @@ public class ass3 {
     }
 
     // Nth Fibonacci (Hard)
+    public static void nthFibonacci(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }
+        System.out.println(a);
+        sc.close();
+    }
 
     // Conversion (Fahrenheit to Celsius)
 
@@ -282,7 +294,8 @@ public class ass3 {
         // chewbacca();
         // binaryToDecimal();
         // oddEvenDelhi();
-        printArmstrongNums();
-        printSeries();
+        // printArmstrongNums();
+        // printSeries();
+        nthFibonacci();
     }
 }
