@@ -256,6 +256,52 @@ public class ass3 {
     }
 
     // Boston Numbers
+    public static void bostonNumbers(){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        int temp = N;
+        int digitSumN = 0;
+
+        while (temp > 0) {
+            digitSumN += temp % 10;
+            temp /= 10;
+        }
+
+        int num = N;
+        int primeFactorSum = 0;
+        boolean isComposite = false;
+
+        for (int i = 2; i * i <= num; i++) {
+            while (num % i == 0) {
+                isComposite = true;
+
+                int factor = i;
+                while (factor > 0) {
+                    primeFactorSum += factor % 10;
+                    factor /= 10;
+                }
+
+                num /= i;
+            }
+        }
+
+        if (num > 1) {
+            isComposite = true;
+            int factor = num;
+            while (factor > 0) {
+                primeFactorSum += factor % 10;
+                factor /= 10;
+            }
+        }
+
+        if (isComposite && digitSumN == primeFactorSum) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
+        sc.close();
+    }
 
     // Shopping Game
 
@@ -333,6 +379,7 @@ public class ass3 {
         // printSeries();
         // nthFibonacci();
         // fahrenheitToCelsius();
-        anyToAny();
+        // anyToAny();
+        bostonNumbers();
     }
 }
