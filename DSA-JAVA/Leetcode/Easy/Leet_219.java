@@ -16,7 +16,7 @@ public class Leet_219 {
     // 1173ms | Beats 6.39%
     public boolean containsNearbyDuplicate2(int[] nums, int k) {
         for (int i=0; i<nums.length; i++) {
-            for (int j=i+1; j<nums.length && j<=i+k ; j++) {
+            for (int j=i+1; j<nums.length && j<=i+k ; j++) {  // i-j<= k means j<=i+k
                 if (nums[i] == nums[j]) {
                     return true;
                 }
