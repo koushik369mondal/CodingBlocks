@@ -17,7 +17,18 @@ public class Leet_75 {
     
     // Selection Sort
     public void sortColors2(int[] nums) {
-
+        int n = nums.length;
+        for(int i=0; i<n-1; i++){
+            int minIndex = i;
+            for(int j=i+1; j<n; j++){
+                if(nums[j] < nums[minIndex]){
+                    minIndex = j;
+                }
+            }
+            int temp = nums[i];
+            nums[i] = nums[minIndex];
+            nums[minIndex] = temp;
+        }
     }
 
     //Insertion Sort 
@@ -35,7 +46,7 @@ public class Leet_75 {
     public static void main(String[] args) {
         Leet_75 obj = new Leet_75();
         int[] nums = {2, 0, 2, 1, 1, 0};
-        obj.sortColors1(nums);
+        obj.sortColors2(nums);
         printArray(nums);
     }
 }

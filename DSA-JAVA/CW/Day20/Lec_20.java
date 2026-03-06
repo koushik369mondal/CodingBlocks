@@ -1,7 +1,7 @@
 // 5th March 2026
 package CW.Day20;
 
-public class Leet_20 {
+public class Lec_20 {
     // leetcode question - 
     // 278 - First Bad Version,
     // 75 - Sort Colors(Insertion, Selection, Bubble),
