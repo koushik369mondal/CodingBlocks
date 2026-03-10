@@ -1,6 +1,7 @@
-package CW.Lec22;
+// 9th March 2026
+package CW.Day22;
 
-public class leet_22_1 {
+public class lec_22_1 {
     public static void countFrequency(){
         int arr[] = {1, 2, 2, 3, 3, 3, 4, 4,};
         int max = arr[0];
@@ -19,6 +20,10 @@ public class leet_22_1 {
             }
         }
     }
+
+    // leetcode question -
+    // 136. Single Number
+    // 137. Single Number II
 
     public static void main(String[] args) {
         countFrequency();
