@@ -24,6 +24,24 @@ public class ass4 {
     // Arrays-Target Sum Triplets
 
     // Arrays-Linear Search
+    public static void linearSearch(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); // Size of the array
+        int target = sc.nextInt(); // Target element
+        int arr[] = new int[n]; // Array declaration
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+        int index = -1;
+        for(int i=0; i<n; i++){
+            if(arr[i] == target){
+                index = i;
+                break;
+            }
+        }
+        System.out.println(index);
+        sc.close();
+    }
 
     // Arrays-Target Sum Pairs
 
@@ -68,6 +86,8 @@ public class ass4 {
     // Next Permutation
 
     public static void main(String[] args) {
-        inverseOfArray();
+        // inverseOfArray();
+
+        linearSearch();
     }
 }
