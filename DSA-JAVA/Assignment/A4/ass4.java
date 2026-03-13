@@ -1,12 +1,14 @@
 package Assignment.A4;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ass4 {
     public static void main(String[] args) {
         // inverseOfArray();
         // linearSearch();
-        reverseArray();
+        // reverseArray();
+        squaresOfSortedArray();
     }
 
     // Inverse of an array
@@ -73,6 +75,23 @@ public class ass4 {
     }
 
     // Squares of a Sorted Array
+    public static void squaresOfSortedArray(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int[] squares = new int[n];
+        for (int i=0; i<n; i++) {
+            squares[i] = arr[i] * arr[i];
+        }
+        Arrays.sort(squares);
+        for (int i=0; i<n; i++) {
+            System.out.print(squares[i] + " ");
+        }
+        sc.close();
+    }
 
     // Sort just Zeroes and Ones
 
