@@ -11,7 +11,8 @@ public class ass4 {
         // squaresOfSortedArray();
         // maxValueInArray();
         // targetSumPairs();
-        targetSumTriplets();
+        // targetSumTriplets();
+        sortZeroesAndOnes();
     }
 
     // Inverse of an array
@@ -151,6 +152,27 @@ public class ass4 {
     }
 
     // Sort just Zeroes and Ones
+    public static void sortZeroesAndOnes(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int countZeroes = 0;
+        for (int i=0; i<n; i++) {
+            if (arr[i] == 0) {
+                countZeroes++;
+            }
+        }
+        for (int i=0; i<countZeroes; i++) {
+            System.out.print(0 + " ");
+        }
+        for (int i=countZeroes; i<n; i++) {
+            System.out.print(1 + " ");
+        }
+        sc.close();
+    }
 
     // Calculate The Sum
 
