@@ -26,21 +26,20 @@ public class ass4 {
     // Arrays-Linear Search
     public static void linearSearch(){
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // Size of the array
-        int target = sc.nextInt(); // Target element
-        int arr[] = new int[n]; // Array declaration
-        for(int i=0; i<n; i++){
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int index = -1;
-        for(int i=0; i<n; i++){
-            if(arr[i] == target){
-                index = i;
-                break;
+        int target = sc.nextInt();
+        sc.close();
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == target) {
+                System.out.println(i);
+                return;
             }
         }
-        System.out.println(index);
-        sc.close();
+        System.out.println(-1);
     }
 
     // Arrays-Target Sum Pairs
