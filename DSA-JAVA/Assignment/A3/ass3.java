@@ -4,6 +4,29 @@ import java.util.Scanner;
 
 public class ass3 {
 
+    public static void main(String[] args) {
+        // sumOfOddEven();
+        // countDigits();
+        // printReverse();
+        // binaryToDecimal();
+        // printSeries();
+        // LCM();
+        // nthFibonacci();
+        // fahrenheitToCelsius();
+        // checkPrime();
+        // GCD();
+        // chewbacca();
+        // replaceZero();
+        // simpleInput();
+        // printArmstrongNums();
+        // anyToAny();
+        // bostonNumbers();
+        // shoppingGame();
+        inverseOfNumber();
+        // oddEvenDelhi();
+        // isArmStrong();
+    }
+
     // Sum of odd placed and even placed digits
     public static void sumOfOddEven(){
         Scanner sc = new Scanner(System.in);
@@ -402,29 +425,5 @@ public class ass3 {
         } else {
             System.out.println("false");
         }
-    }
-
-
-    public static void main(String[] args) {
-        // sumOfOddEven();
-        // countDigits();
-        // printReverse();
-        // binaryToDecimal();
-        // printSeries();
-        // LCM();
-        // nthFibonacci();
-        // fahrenheitToCelsius();
-        // checkPrime();
-        // GCD();
-        // chewbacca();
-        // replaceZero();
-        // simpleInput();
-        // printArmstrongNums();
-        // anyToAny();
-        // bostonNumbers();
-        // shoppingGame();
-        inverseOfNumber();
-        // oddEvenDelhi();
-        // isArmStrong();
     }
 }

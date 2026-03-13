@@ -3,6 +3,12 @@ package Assignment.A4;
 import java.util.Scanner;
 
 public class ass4 {
+    public static void main(String[] args) {
+        // inverseOfArray();
+        // linearSearch();
+        // reverseArray();
+    }
+    
     // Inverse of an array
     public static void inverseOfArray(){
         Scanner sc = new Scanner(System.in);
@@ -53,6 +59,18 @@ public class ass4 {
     // Alex Goes Shopping
 
     // Arrays-Reverse an Array
+    public static void reverseArray(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 
     // Squares of a Sorted Array
 
@@ -83,10 +101,4 @@ public class ass4 {
     // Majority Element
 
     // Next Permutation
-
-    public static void main(String[] args) {
-        // inverseOfArray();
-
-        linearSearch();
-    }
 }

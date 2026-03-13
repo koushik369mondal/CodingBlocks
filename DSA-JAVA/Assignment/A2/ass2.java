@@ -1,6 +1,27 @@
 package Assignment.A2;
 import java.util.Scanner;
 public class ass2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // pattern1(n);
+        // pattern2(n);
+        // pattern3(n);
+        // pattern4(n);
+        // pattern5(n);
+        // pattern6(n);
+        // pattern7(n);
+        // pattern8(n);
+        // pattern9(n);
+        // pattern10(n);
+        pattern11(n);
+        // pattern12(n);
+        // pattern13(n);
+        // pattern14(n);
+        sc.close();
+    }
+
+    
     //  * * * * *
     //  * *   * *
     //  *       *
@@ -473,26 +494,5 @@ public class ass2 {
             }
             System.out.println();
         }
-    }
-
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        // pattern1(n);
-        // pattern2(n);
-        // pattern3(n);
-        // pattern4(n);
-        // pattern5(n);
-        // pattern6(n);
-        // pattern7(n);
-        // pattern8(n);
-        // pattern9(n);
-        // pattern10(n);
-        pattern11(n);
-        // pattern12(n);
-        // pattern13(n);
-        // pattern14(n);
-        sc.close();
     }
 }
