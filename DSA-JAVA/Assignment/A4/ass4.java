@@ -15,7 +15,8 @@ public class ass4 {
         // sortZeroesAndOnes();
         // bubbleSort();
         // selectionSort();
-        insertionSort();
+        // insertionSort();
+        productOfArrayExceptSelf();
     }
 
     // Inverse of an array
@@ -257,6 +258,30 @@ public class ass4 {
     // Sorting Patient Severity Levels in Hospitals
 
     // Product of Array Except Self
+    public static void productOfArrayExceptSelf(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long[] arr = new long[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        long[] prefix = new long[n];
+        long[] suffix = new long[n];
+        // prefix
+        prefix[0] = 1;
+        for (int i=1; i<n; i++) {
+            prefix[i] = prefix[i-1] * arr[i-1];
+        }
+        // suffix
+        suffix[n-1] = 1;
+        for (int i=n-2; i>=0; i--) {
+            suffix[i] = suffix[i + 1] * arr[i+1];
+        }
+        for (int i=0; i<n; i++) {
+            System.out.print(prefix[i] * suffix[i] + " ");
+        }
+        sc.close();
+    }
 
     // Running Sum of the Array
 
