@@ -17,7 +17,8 @@ public class ass4 {
         // selectionSort();
         // insertionSort();
         // productOfArrayExceptSelf();
-        majorityElement();
+        // majorityElement();
+        // rainWaterTrapping();
     }
 
     // Inverse of an array
