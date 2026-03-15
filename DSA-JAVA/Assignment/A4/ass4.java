@@ -19,6 +19,8 @@ public class ass4 {
         // productOfArrayExceptSelf();
         // majorityElement();
         // rainWaterTrapping();
+        // maximumCircularSum();
+        runningSumOfArray();
     }
 
     // Inverse of an array
@@ -256,6 +258,27 @@ public class ass4 {
     }
 
     // Maximum Circular Sum
+    public static void maximumCircularSum(){
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int k=0; k<t; k++) {
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int i=0; i<n; i++) {
+                arr[i] = sc.nextInt();
+            }
+            int maxSum = Integer.MIN_VALUE;
+            for (int i=0; i<n; i++) {
+                int currentSum = 0;
+                for (int j=0; j<n; j++) {
+                    currentSum += arr[(i+j)%n];
+                    maxSum = Math.max(maxSum, currentSum);
+                }
+            }
+            System.out.println(maxSum);
+        }
+        sc.close();
+    }
 
     // Sorting Patient Severity Levels in Hospitals
 
@@ -286,10 +309,62 @@ public class ass4 {
     }
 
     // Running Sum of the Array
+    public static void runningSumOfArray(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int[] sum = new int[n];
+        sum[0] = arr[0];
+        for (int i=1; i<n; i++) {
+            sum[i] = sum[i-1] + arr[i];
+        }
+        for (int i=0; i<n; i++) {
+            System.out.print(sum[i] + " ");
+        }
+        sc.close();
+    }
 
     // Von Neuman Loves Binary
 
     // Rain Water Trapping
+    public static void rainWaterTrapping() {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i=0; i<t; i++) {
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for (int j=0; j<n; j++) {
+                arr[j] = sc.nextInt();
+            }
+            int left = 0;
+            int right = n - 1;
+            int leftMax = 0;
+            int rightMax = 0;
+            long water = 0;
+            while (left <= right) {
+                if (arr[left] <= arr[right]) {
+                    if (arr[left] >= leftMax) {
+                        leftMax = arr[left];
+                    } else {
+                        water += leftMax - arr[left];
+                    }
+                    left++;
+                } else {
+                    if (arr[right] >= rightMax) {
+                        rightMax = arr[right];
+                    } else {
+                        water += rightMax - arr[right];
+                    }
+                    right--;
+                }
+            }
+            System.out.println(water);
+            sc.close();
+        }
+    }
 
     // Majority Element
     public static void majorityElement(){
