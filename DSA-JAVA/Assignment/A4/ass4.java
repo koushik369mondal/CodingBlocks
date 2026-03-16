@@ -427,37 +427,29 @@ public class ass4 {
     public static void rainWaterTrapping() {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        for (int i=0; i<t; i++) {
+        for (int test=0; test<t; test++) {
             int n = sc.nextInt();
             int[] arr = new int[n];
-            for (int j=0; j<n; j++) {
-                arr[j] = sc.nextInt();
+            for (int i=0; i<n; i++) {
+                arr[i] = sc.nextInt();
             }
-            int left = 0;
-            int right = n - 1;
-            int leftMax = 0;
-            int rightMax = 0;
-            long water = 0;
-            while (left <= right) {
-                if (arr[left] <= arr[right]) {
-                    if (arr[left] >= leftMax) {
-                        leftMax = arr[left];
-                    } else {
-                        water += leftMax - arr[left];
-                    }
-                    left++;
-                } else {
-                    if (arr[right] >= rightMax) {
-                        rightMax = arr[right];
-                    } else {
-                        water += rightMax - arr[right];
-                    }
-                    right--;
-                }
+            int[] prefix = new int[n];
+            int[] suffix = new int[n];
+            prefix[0] = arr[0];
+            for (int i=1; i<n; i++) {
+                prefix[i] = Math.max(prefix[i-1], arr[i]);
+            }
+            suffix[n-1] = arr[n-1];
+            for (int i=n-2; i>=0; i--) {
+                suffix[i] = Math.max(suffix[i+1], arr[i]);
+            }
+            int water=0;
+            for (int i=0; i<n; i++) {
+                water += Math.min(prefix[i], suffix[i]) - arr[i];
             }
             System.out.println(water);
-            sc.close();
         }
+        sc.close();
     }
 
     // Majority Element
