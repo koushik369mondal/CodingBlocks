@@ -23,7 +23,12 @@ public class ass4 {
         // runningSumOfArray();
         // vonNeumanLovesBinary();
         // pairOfRoses();
-        alexGoesShopping();
+        // alexGoesShopping();
+        // sortingPatientSeverityLevelsInHospitals();
+        // nextPermutation();
+        // helpRamu();
+        // maximumSumPath();
+        // cyclicArraySum();
     }
 
     // Inverse of an array
@@ -160,6 +165,42 @@ public class ass4 {
     }
 
     // Help Ramu
+    public static void helpRamu(){
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            int c1 = sc.nextInt();
+            int c2 = sc.nextInt();
+            int c3 = sc.nextInt();
+            int c4 = sc.nextInt();
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            int[] rickshaw = new int[n];
+            int[] cab = new int[m];
+            for (int i = 0; i < n; i++) {
+                rickshaw[i] = sc.nextInt();
+            }
+            for (int i = 0; i < m; i++) {
+                cab[i] = sc.nextInt();
+            }
+            // cost for rickshaws
+            int rickshawCost = 0;
+            for (int i = 0; i < n; i++) {
+                rickshawCost += Math.min(rickshaw[i] * c1, c2);
+            }
+            rickshawCost = Math.min(rickshawCost, c3);
+            // cost for cabs
+            int cabCost = 0;
+            for (int i = 0; i < m; i++) {
+                cabCost += Math.min(cab[i] * c1, c2);
+            }
+            cabCost = Math.min(cabCost, c3);
+            // final cost
+            int result = Math.min(rickshawCost + cabCost, c4);
+            System.out.println(result);
+        }
+        sc.close();
+    }
 
     // Alex Goes Shopping
     public static void alexGoesShopping() {
@@ -245,6 +286,34 @@ public class ass4 {
     }
 
     // Calculate The Sum
+    public static void cyclicArraySum(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long[] arr = new long[n];
+        long sum = 0;
+        long mod = 1000000007;
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextLong();
+            sum = (sum + arr[i]) % mod;
+        }
+        int q = sc.nextInt();
+        for (int i = 0; i < q; i++) {
+            sc.nextInt(); // ignore X
+        }
+        // compute (2^q % mod)
+        long power = 1;
+        long base = 2;
+        while (q > 0) {
+            if ((q & 1) == 1) {
+                power = (power * base) % mod;
+            }
+            base = (base * base) % mod;
+            q = q >> 1;
+        }
+        long result = (sum * power) % mod;
+        System.out.println(result);
+        sc.close();
+    }
 
     // Arrays-Bubble Sort
     public static void bubbleSort(){
@@ -270,6 +339,53 @@ public class ass4 {
     }
 
     // Maximum Sum Path in Two Arrays
+    public static void maximumSumPath() {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int test = 0; test < t; test++) {
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            int[] arr1 = new int[n];
+            int[] arr2 = new int[m];
+            for (int i = 0; i < n; i++) {
+                arr1[i] = sc.nextInt();
+            }
+            for (int i = 0; i < m; i++) {
+                arr2[i] = sc.nextInt();
+            }
+            int i = 0, j = 0;
+            int sum1 = 0, sum2 = 0;
+            int result = 0;
+            while (i < n && j < m) {
+                if (arr1[i] < arr2[j]) {
+                    sum1 += arr1[i];
+                    i++;
+                } else if (arr2[j] < arr1[i]) {
+                    sum2 += arr2[j];
+                    j++;
+                } else {
+                    // common element
+                    result += Math.max(sum1, sum2) + arr1[i];
+                    sum1 = 0;
+                    sum2 = 0;
+                    i++;
+                    j++;
+                }
+            }
+            // remaining elements
+            while (i < n) {
+                sum1 += arr1[i];
+                i++;
+            }
+            while (j < m) {
+                sum2 += arr2[j];
+                j++;
+            }
+            result += Math.max(sum1, sum2);
+            System.out.println(result);
+        }
+        sc.close();
+    }
 
     // Arrays-Selection Sort
     public static void selectionSort(){
@@ -405,20 +521,9 @@ public class ass4 {
     // Von Neuman Loves Binary
     public static void vonNeumanLovesBinary() {
         Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        // while(t-- > 0)
-        // System.out.println(Integer.parseInt(sc.next(), 2));
-        for (int i = 0; i < t; i++) {
-            int binary = sc.nextInt();
-            int decimal = 0;
-            int power = 0;
-            while (binary > 0) {
-                int digit = binary % 10;
-                decimal += digit * Math.pow(2, power);
-                binary = binary / 10;
-                power++;
-            }
-            System.out.println(decimal);
+        int n = sc.nextInt();
+        while(n-- > 0) {
+            System.out.println(Integer.parseInt(sc.next(), 2));
         }
         sc.close();
     }
@@ -478,4 +583,39 @@ public class ass4 {
     }
 
     // Next Permutation
+    public static void nextPermutation() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int i = n-2;
+        while (i >= 0 && arr[i] >= arr[i+1]) {
+            i--;
+        }
+        if (i >= 0) {
+            int j = n-1;
+            while (arr[j] <= arr[i]) {
+                j--;
+            }
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        // reverse the suffix
+        int left = i+1;
+        int right = n-1;
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
+        for (int k=0; k<n; k++) {
+            System.out.print(arr[k] + " ");
+        }
+        sc.close();
+    }
 }
