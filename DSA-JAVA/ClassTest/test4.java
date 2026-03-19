@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class test4 {
     public static void main(String[] args) {
         // rotate();
-        inverseOfArray();
+        // inverseOfArray();
+        maxSum();
     }
 
     // rotate array by k times
@@ -58,7 +59,28 @@ public class test4 {
         sc.close();
     }
 
-    // maximum subarray sum **
+    // maximum subarray sum ** eg: input: 1,2,3,-7,8,7 output: 15 (8 + 7)
+    public static void maxSum(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+        int maxSum = Integer.MIN_VALUE;
+        int currentSum = 0;
+        for(int i=0; i<n; i++){
+            currentSum = currentSum + arr[i];
+            if(currentSum > maxSum){
+                maxSum = currentSum;
+            }
+            if(currentSum < 0){
+                currentSum = 0;
+            }
+        }
+        System.out.println(maxSum);
+        sc.close();
+    }
 
     // trapping rain water ***
 
