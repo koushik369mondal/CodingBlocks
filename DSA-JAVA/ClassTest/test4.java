@@ -19,32 +19,26 @@ public class test4 {
     public static void rotate(){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] arr = new int[n];
-        for(int i=0; i<n; i++){
-            arr[i] = sc.nextInt();
+        int[] array = new int[n];
+        for (int i=0; i<n; i++) {
+            array[i] = sc.nextInt();
         }
-        k = k % n; // eg: if k=5 and n=3, then we only need to rotate by 2 times (5 % 3 = 2)
-        // Reverse the entire array
-        reverse(arr, 0, n - 1);
-        // Reverse the first k elements
-        reverse(arr, 0, k - 1);
-        // Reverse the remaining elements
-        reverse(arr, k, n - 1);
-        // Print the rotated array
-        for(int i=0; i<n; i++){
-            System.out.print(arr[i] + " ");
+        int k = sc.nextInt();
+        k = k % n;
+        while (k-- > 0) {
+            int temp = array[0];
+            for (int i=1; i<n; i++) {
+                array[i-1] = array[i];
+            }
+            array[n - 1] = temp;
+        }
+        // for (int x : array) {
+        // System.out.print(x + " ");
+        // }
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i] + " ");
         }
         sc.close();
-    }
-    public static void reverse(int[] arr, int start, int end) {
-        while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
-        }
     }
 
     // inverse of an array
@@ -82,7 +76,7 @@ public class test4 {
             }
             if(currentSum < 0){
                 currentSum = 0;
-            }
+            }           
         }
         System.out.println(maxSum);
         sc.close();
