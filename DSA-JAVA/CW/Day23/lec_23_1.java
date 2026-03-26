@@ -2,6 +2,11 @@
 package CW.Day23;
 import java.util.Scanner;
 public class lec_23_1 {
+    public static void main(String[] args) {
+        twoFriend();
+    }
+
+    
 
     public static void twoFriend(){
         Scanner sc = new Scanner(System.in);
@@ -41,8 +46,5 @@ public class lec_23_1 {
             System.out.println("B : " + B);
         }
         sc.close();
-    }
-    public static void main(String[] args) {
-        twoFriend();
     }
 }
