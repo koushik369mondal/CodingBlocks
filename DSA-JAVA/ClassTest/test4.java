@@ -24,7 +24,7 @@ public class test4 {
             array[i] = sc.nextInt();
         }
         int k = sc.nextInt();
-        k = k % n;
+        k = k % n; 
         while (k-- > 0) {
             int temp = array[0];
             for (int i=1; i<n; i++) {
