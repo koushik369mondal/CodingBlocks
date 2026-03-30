@@ -42,8 +42,17 @@ public class lec_24 {
     }
 
     // Linear Search in 2D Array
-    public static void linearSearch() {
-
+    public static void linearSearch(int arr[][]) {
+        int target = 4;
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[i].length; j++){
+                if(arr[i][j] == target){
+                    System.out.println("Found at: (" + i + "," + j + ")");
+                    return;
+                }
+            }
+        }
+        System.out.println("Not found");
     }
 
     // Binary Search in 2D Array
@@ -63,9 +72,17 @@ public class lec_24 {
             }
         }
 
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
         // TwoDArray(arr);
         // findMax(arr);
-        EvenOdd(arr);
+        // EvenOdd(arr);
+        linearSearch(arr);
 
         sc.close();
     }
