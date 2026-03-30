@@ -1,5 +1,5 @@
 // 30th March 2026
-package CW.Day24;
+package CW.TwoDArrays.Day24;
 
 import java.util.Scanner;
 
