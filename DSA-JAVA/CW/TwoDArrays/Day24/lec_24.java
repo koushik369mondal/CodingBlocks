@@ -55,29 +55,6 @@ public class lec_24 {
         System.out.println("Not found");
     }
 
-    // Binary Search in 2D Array
-    public static void binarySearch(int arr[][]) {
-        int target = 4;
-        int n = arr.length;
-        int m = arr[0].length;
-        int low = 0;
-        int high = n * m - 1;
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            int i = mid / m; 
-            int j = mid % m; 
-            if (arr[i][j] == target) {
-                System.out.println("Found at: (" + i + "," + j + ")");
-                return;
-            } else if (arr[i][j] < target) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
-        }
-        System.out.println("Not found");
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -101,7 +78,6 @@ public class lec_24 {
         // findMax(arr);
         // EvenOdd(arr);
         // linearSearch(arr);
-        // binarySearch(arr);
         sc.close();
     }
 

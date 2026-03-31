@@ -22,11 +22,35 @@ public class lec_25 {
             System.out.println();
         }
 
+        // binarySearch(arr);
         // wavePrint(arr);
         // transpose(arr);
         // multiplication(arr);
         spiralMatrix(arr);
         sc.close();
+    }
+
+    // Binary Search in 2D Array
+    public static void binarySearch(int arr[][]) {
+        int target = 4;
+        int n = arr.length;
+        int m = arr[0].length;
+        int low = 0;
+        int high = n * m - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            int i = mid / m;
+            int j = mid % m;
+            if (arr[i][j] == target) {
+                System.out.println("Found at: (" + i + "," + j + ")");
+                return;
+            } else if (arr[i][j] < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        System.out.println("Not found");
     }
 
     // wave print
