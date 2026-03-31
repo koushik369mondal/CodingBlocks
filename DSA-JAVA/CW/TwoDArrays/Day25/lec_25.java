@@ -26,7 +26,8 @@ public class lec_25 {
         // wavePrint(arr);
         // transpose(arr);
         // multiplication(arr);
-        spiralMatrix(arr);
+        // spiralMatrix(arr);
+        sumOfOddEven(arr);
         sc.close();
     }
 
@@ -141,5 +142,22 @@ public class lec_25 {
             }
             System.out.println();
         }
+    }
+
+    // sum of Odd and Even
+    public static void sumOfOddEven(int arr[][]){
+        int sumEven = 0;
+        int sumOdd = 0;
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[i].length; j++){
+                if(arr[i][j] % 2 == 0){
+                    sumEven += arr[i][j];
+                } else {
+                    sumOdd += arr[i][j];
+                }
+            }
+        }
+        System.out.println("Sum of Even: " + sumEven);
+        System.out.println("Sum of Odd: " + sumOdd);
     }
 }
