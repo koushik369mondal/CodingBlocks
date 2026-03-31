@@ -23,7 +23,8 @@ public class lec_25 {
         }
 
         // wavePrint(arr);
-        transpose(arr);
+        // transpose(arr);
+        multiplication(arr);
         sc.close();
     }
 
@@ -65,5 +66,22 @@ public class lec_25 {
 
     // spiral print
 
-    // multiplication
+    // multiplication 
+    public static void multiplication(int arr[][]){
+        int n = arr.length;
+        int m = arr[0].length;
+        int multi[][] = new int[n][m];
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                multi[i][j] = arr[i][j] * arr[i][j];
+            }
+        }
+        System.out.println("Multiplication 2D Matrix: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(multi[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 }
