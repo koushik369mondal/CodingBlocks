@@ -1,9 +1,9 @@
+// 1st April 2026
 package CW.TwoDArrays.Day26;
 
 import java.util.Scanner;
 
 public class lec_26 {
-    // Spiral Matrix
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -26,6 +26,7 @@ public class lec_26 {
         sc.close();
     }
 
+    // Spiral Matrix
     public static void SpiralMatrix(int arr[][]){
         int SR=0;
         int SC=0;
