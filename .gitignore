@@ -1,0 +1,19 @@
+# Compiled Java class files
+*.class
+
+# Output and build directories
+out/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code (keep shared settings)
+.vscode/*
+!.vscode/settings.json
+
+# System and log files
+*.log
+.DS_Store
+Thumbs.db

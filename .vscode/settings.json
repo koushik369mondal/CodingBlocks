@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
         "DSA-JAVA"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
