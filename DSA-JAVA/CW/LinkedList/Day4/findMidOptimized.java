@@ -1,16 +1,17 @@
 package CW.LinkedList.Day4;
 
-class Node {
-    int data;
-    Node next;
-
-    public Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-
+// leetcode - 876
 public class findMidOptimized {
+    static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
     public static Node findMiddle(Node head) {
         Node slow = head;
         Node fast = head;
@@ -21,6 +22,19 @@ public class findMidOptimized {
         }
 
         return slow;
+    }
+
+    public static int itrSearch(Node head, int key) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == key) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -39,7 +53,15 @@ public class findMidOptimized {
 
         Node mid = findMiddle(head);
         if (mid != null) {
-            System.out.println(mid.data);
+            System.out.println("Middle element: " + mid.data);
+        }
+
+        int key = 20;
+        int index = itrSearch(head, key);
+        if (index != -1) {
+            System.out.println("Key " + key + " found at index: " + index);
+        } else {
+            System.out.println("Key " + key + " not found");
         }
     }
 }

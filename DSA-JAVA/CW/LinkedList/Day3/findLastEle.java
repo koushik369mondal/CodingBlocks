@@ -1,16 +1,29 @@
 package CW.LinkedList.Day3;
 
-class Node{
-    int data;
-    Node next;
-
-    public Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
 public class findLastEle {
+    static class Node {
+        int data;
+        Node next;
+
+        public Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    public static void printLast(Node head) {
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        System.out.println(temp.data);
+    }
+
     public static void main(String[] args) {
         Node head = new Node(5);
         Node second = new Node(10);
@@ -19,10 +32,6 @@ public class findLastEle {
         head.next = second;
         second.next = third;
 
-        Node temp = head;
-        while(temp.next != null){
-            temp = temp.next;
-        }
-        System.out.print(temp.data);
+        printLast(head);
     }
 }
