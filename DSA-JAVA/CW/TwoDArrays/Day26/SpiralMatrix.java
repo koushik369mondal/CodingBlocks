@@ -22,12 +22,12 @@ public class SpiralMatrix {
             System.out.println();
         }
 
-        SpiralMatrix(arr);
+        spiralMatrix(arr);
         sc.close();
     }
 
     // Spiral Matrix
-    public static void SpiralMatrix(int arr[][]){
+    public static void spiralMatrix(int arr[][]){
         int SR=0;
         int SC=0;
         int ER=arr.length-1;
