@@ -8,7 +8,7 @@ public class ArrayToList {
         public Node(int data) {
             this.data = data;
             this.next = null;
-        }
+        }   
     }
 
     public static void main(String[] args) {
